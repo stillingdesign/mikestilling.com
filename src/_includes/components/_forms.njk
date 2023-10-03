@@ -1,0 +1,21 @@
+{% macro sales(theme) %}
+        <div data-form="sales" class="form-full {% if theme == 'dark' %}dark{% endif %}">
+
+        </div>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+            hbspt.forms.create({
+                region: "na1",
+                portalId: "40124079",
+                formId: "99e3e810-b866-4e31-a429-c448151671a9",
+                target:'[data-form="sales"]',
+                submitButtonClass: `btn btn:lg {% if theme == 'dark' %}btn:primary-i{% else %}btn:primary{% endif %} mt:8`,
+                locale: "en",
+                translations: {
+                    en: {
+                        submitText: "Send it!"
+                    }
+                }
+            });
+        </script>
+{% endmacro %}

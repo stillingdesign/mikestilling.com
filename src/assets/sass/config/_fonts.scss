@@ -1,0 +1,41 @@
+/* purgecss start ignore */
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/inter-400.woff2") format("woff2"),
+         url("/assets/fonts/inter-400.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/assets/fonts/inter-400i.woff2") format("woff2"),
+         url("/assets/fonts/inter-400i.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/assets/fonts/inter-600.woff2") format("woff2"),
+         url("/assets/fonts/inter-600.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/assets/fonts/inter-600i.woff2") format("woff2"),
+         url("/assets/fonts/inter-600i.woff") format("woff");
+}
+/* purgecss end ignore */
+
+$font-families: (
+    sans: ('Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'),
+);
