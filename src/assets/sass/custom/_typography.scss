@@ -1,9 +1,7 @@
 @use "sass:map";
 @use "uniform" as *;
 
-.headline { @include apply("leading:110 tracking:tightest"); }
-
-.faded { opacity: 0.85; }
+.gradient-text { background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .highlight {
     background: linear-gradient(0deg, rgba(var(--ui-green), 1) 0%, rgba(var(--ui-green), 1) 100%);

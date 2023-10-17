@@ -43,22 +43,22 @@
     </head>
 
     {# Body #}
-    <body data-barba="wrapper" class="w:100p max-w:100p font:md tracking:tight leading:160 font:sans kern:normal antialiased {% if theme == 'dark' %}bg:sheet-5-i color:ink-3-i{% else %}bg:sheet-5 color:ink-3{% endif %}">
+    <body data-barba="wrapper" class="w:100p max-w:100p font:md leading:160 font:sans light kern:normal antialiased {% if theme == 'dark' %}bg:sheet-6-i color:ink-3-i{% else %}bg:sheet-5 color:ink-3{% endif %}">
 
         <div class="relative w:100p">
-
-            {# Header #}
-            {% include "components/_header.njk" %}
             
             {# Nesting for smooth scroll if wanted later on #}
             <div id="smooth-wrapper">
                 <div id="smooth-content">
 
+                    {# Header #}
+                    {% include "_header.njk" %}
+
                     {# Page Content #}
                     {{ content | safe }}
 
                     {# Footer #}
-                    {% include "components/_footer.njk" %}
+                    {% include "_footer.njk" %}
                 </div>
             </div>
 

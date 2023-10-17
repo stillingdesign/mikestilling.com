@@ -5,6 +5,27 @@
 .antialiased { -webkit-font-smoothing: antialiased; }
 .blur\:fix { transform: translate3d(0, 0, 0); }
 
+// Accordion
+[data-accordion-button]:focus-visible:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top:0.25rem;
+    left:-1.25rem;
+    width: calc(100% + 2.5rem);
+    height: calc(100% - 0.5rem);
+    border-radius: 999px;
+    border: 1px solid rgba(var(--primary-rg), 0.3);
+    background-color: rgba(var(--primary-rg), 0.1);
+}
+
+@media (hover: hover) {
+    [data-accordion-button]:hover {
+        opacity:1;
+    }
+}
+
+// Custom scrollbar
 .scrollbar\:dark { scrollbar-color: rgba(var(--edge-1-i), 1) rgba(var(--sheet-4-i), 1); }
 .scrollbar\:dark::-webkit-scrollbar { width: 1rem; }
 .scrollbar\:dark::-webkit-scrollbar-thumb { background: rgba(var(--edge-1-i), 1); border-radius: 999px; border:4px solid rgba(var(--sheet-4-i), 1); }

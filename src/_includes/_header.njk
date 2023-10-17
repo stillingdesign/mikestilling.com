@@ -1,0 +1,13 @@
+{% import "_icons.njk" as icons %}
+
+{# Templating #}
+{% set topLevelItem = 'flex align-items:center justify-content:between md:justify-content:start radius:full border:1 leading:100 outline:none md:opacity:70 font:xl md:font:sm w:100p md:w:auto px:24 sm:px:48 md:px:18 py:10 md:py:14 hover:opacity:100 focus:primary' %}
+
+<header data-header class="absolute top:24 sm:top:40 left:0 z:10 w:100p flex flex:col align-items:center justify-content:center py:6 sm:px:48 border-b:1 border:ink-3 border:dashed border-opacity:6 {% if theme == 'dark' %}color:ink-3-i{% endif %}">
+    <div class="container flex align-items:center justify-content:center md:justify-content:start">
+        {# Logo #}
+        <a href="/" class="pt:10 pb:6 px:12 ml:n12 inline-flex align-items:center justify-content:center radius:full border:1 focus:primary font:serif regular font:lg tracking:tight leading:100">
+            Mike Stilling
+        </a>
+    </div>
+</header>

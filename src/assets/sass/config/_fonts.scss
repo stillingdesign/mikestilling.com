@@ -1,41 +1,79 @@
 /* purgecss start ignore */
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Neue Montreal';
     font-style:  normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("/assets/fonts/inter-400.woff2") format("woff2"),
-         url("/assets/fonts/inter-400.woff") format("woff");
+    font-weight: 300;
+    font-display: block;
+    src: url("/assets/fonts/nm-book.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Inter';
+    font-family: 'Neue Montreal';
+    font-style:  italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/assets/fonts/nm-book-italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: block;
+    src: url("/assets/fonts/nm-semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    font-style:  italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/assets/fonts/nm-semibold-italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Neue Montreal';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: block;
+    src: url("/assets/fonts/nm-semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: block;
+    src: url("/assets/fonts/en-light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    font-style:  italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/assets/fonts/en-light-italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Editorial New';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("/assets/fonts/en-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Editorial New';
     font-style:  italic;
     font-weight: 400;
     font-display: swap;
-    src: url("/assets/fonts/inter-400i.woff2") format("woff2"),
-         url("/assets/fonts/inter-400i.woff") format("woff");
+    src: url("/assets/fonts/en-italic.woff2") format("woff2");
 }
 
-@font-face {
-    font-family: 'Inter';
-    font-style:  normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url("/assets/fonts/inter-600.woff2") format("woff2"),
-         url("/assets/fonts/inter-600.woff") format("woff");
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style:  italic;
-    font-weight: 600;
-    font-display: swap;
-    src: url("/assets/fonts/inter-600i.woff2") format("woff2"),
-         url("/assets/fonts/inter-600i.woff") format("woff");
-}
 /* purgecss end ignore */
 
 $font-families: (
-    sans: ('Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'),
+    sans: ('Neue Montreal', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'),
+    serif: ('Editorial New', Georgia, Cambria, 'Times New Roman', Times, serif),
 );

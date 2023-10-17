@@ -1,0 +1,31 @@
+{% import "_icons.njk" as icons %}
+
+{% set tagline = "Design-led growth" %}
+
+<footer class="section pt:24 {% if theme == 'dark' %}bg:sheet-6-i shadow:footerDark{% else %}bg:sheet-5 shadow:footerLight{% endif %}">
+    <div class="container flex align-items:center justify-content:between pb:16">
+        <a href="/" class="pt:10 pb:6 px:12 ml:n12 inline-flex align-items:center justify-content:center radius:full border:1 focus:primary font:serif regular font:lg tracking:tight leading:100">
+            Mike Stilling
+        </a>
+        <p class="opacity:70">
+            {{ tagline | safe }}
+        </p>
+    </div>
+    <div class="container flex align-items:center justify-content:between border-t:1 {% if theme == 'dark' %}border:edge-2-i{% else %}border:edge-2{% endif %}">
+        <p class="font:sm opacity:70 w:100p">
+            ©{{ base.currentYear() }} {{ base.name }}
+        </p>
+        <div class="flex-shrink:0 block w:0 h:72 border-l:1 {% if theme == 'dark' %}border:edge-2-i{% else %}border:edge-2{% endif %}"></div>
+        <ul class="w:100p flex align-items:center justify-content:end gap:4">
+            {% for collection in navigation | selectattr("subFooter") %}
+                {% for page in collection.menuItems %}
+                    <li class="mr:n12">
+                        <a href="{{ page.url }}" class="inline-block font:sm opacity:70 py:6 px:12 radius:full space:nowrap border:1 focus:primary hover:opacity:100 transition:100 {% if theme == 'dark' %}hover:color:link-hv-i{% else %}hover:color:link-hv{% endif %}">
+                            {{ page.label }}
+                        </a>
+                    </li>
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+</footer>

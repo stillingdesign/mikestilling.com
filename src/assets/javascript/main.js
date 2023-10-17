@@ -1,4 +1,2 @@
-// Interactions
-import './interactions/header.js';
-
-// Animations
+// Behaviors
+import './interactions/accordion.js';

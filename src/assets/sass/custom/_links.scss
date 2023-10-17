@@ -4,7 +4,7 @@
 /* purgecss start ignore */
 
 // Base Button
-.btn { @include apply("flex align-items:center justify-content:center radius:full border:1 leading:100 semibold outline:none flex-shrink:0"); }
+.btn { @include apply("flex align-items:center justify-content:center radius:full border:1 leading:100 outline:none bold flex-shrink:0 tracking:loose"); }
 
 // Button Sizes
 .btn\:sm { @include apply("font:xs px:12 py:10")}

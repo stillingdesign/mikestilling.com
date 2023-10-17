@@ -1,43 +1,307 @@
 ---
 layout: "main.njk"
-seoTitle: "Acme: The search and tab title"
+seoTitle: "Mike Stilling: The search and tab title"
 seoDescription: "This is the description that shows up in search engines."
 ogTitle: "This is the title that shows up in social cards"
 ogDesc: "This is the description that shows up in social cards"
 ogImage: "/assets/images/og/default.png"
 ogImageAlt: "This is the alt text for social cards images"
-theme: light
+theme: dark
 changefreq: daily
 ---
-{% import "components/_forms.njk" as forms %}
+{% import "_icons.njk" as icons %}
 
-<main>
-
-    <section class="section section:py">
-        <div class="container flex flex:col sm:grid grid-cols:2 gap:48">
-            <div class="flex flex:col align-items:start gap:16">
-                <h1 class="font:8xl semibold tracking:tighter leading:110">
-                    The website template that means business
+<main >
+    
+    {# Hero #}
+    <section class="section">
+        <div class="container pt:112 sm:pt:144 md:pt:192 pb:48 sm:pb:80 md:pb:96 flex flex:col gap:48 sm:gap:64 md:gap:96">
+            {# Content #}
+            <div class="relative flex flex:col md:flex:row align-items:center md:align-items:end md:justify-content:between text:center md:text:left">
+                <h1 class="font:serif font:12vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                    Design-led growth <span class="space:nowrap">for SaaS companies</span>
                 </h1>
-                <p class="font:3xl leading:150 tracking:tighter color:ink-1">
-                    Increase efficiency, quality, and revenue <span class="space:nowrap">with the</span> Acme website template today.
+                <p class="font:7vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 md:mb:14 lg:mb:16 tracking:tight">
+                    Brands, campaigns, and<br class="hidden md:block"/> <span class="space:nowrap sm:space:normal md:space:nowrap">websites that drive revenue.</span>
                 </p>
-                <a href="#" class="btn btn:primary btn:lg">
-                    Try for free
-                </a>
             </div>
-            <div class="w:100p">
-                {{ forms.sales(theme=theme) }}
+            {# Graphics #}
+            <div class="relative w:100p flex flex:col md:flex:row-reverse justify-content:between">
+                {# Image #}
+                <div class="relative flex w:100p md:w:10-12 ratio:1-1 sm:ratio:16-9 bg:sheet-4-i mb:16 md:mb:0"></div>
+                {# Caption #}
+                <div class"relative">
+                    <div class="hidden md:block w:24 h:1 bg:primary-rg mb:16"></div>
+                    <p class="flex gap:8 md:block leading:140 opacity:70 font:xs sm:font:sm justify-content:center sm:justify-content:start">
+                        Mike and family<br class="hidden md:block">
+                        <span class="md:hidden">·</span>
+                        Black River Falls, WI<br class="hidden md:block">
+                        <span class="md:hidden">·</span>
+                        <em>Aug. 2023</em>
+                    </p>
+                </divn>
             </div>
         </div>
     </section>
 
-    <section class="section min-h:640 pt:192 overflow:hidden">
+    {# Intro #}
+    <section class="section">
+        <div class="container flex flex:col align-items:center sm:gap:80">
+            {# Headline #}
+            <h2 class="w:plus16 sm:w:100p sm:max-w:640 md:max-w:none md:w:8-12 font:5-5vw sm:font:6xl md:font:3-75vw lg:font:7xl sm:tracking:tight pb:24 sm:pb:0 border-b:1 border:white border-opacity:10 sm:border-b:0 border:dashed">
+                Mike has been designing, developing, and directing digital brands across an array of industries for over seven years.
+            </h2>
+            {# List #}
+            <ul class="w:100p flex flex:col sm:flex:row sm:gap:28 justify-content:between font:5-5vw sm:font:md md:font:xl">
+                {% macro overviewItem(head, desc) %}
+                    <li class="w:100p sm:max-w:256 md:max-w:304 py:24 border-b:1 border:white border-opacity:10 sm:border-b:0 border:dashed">
+                        <h3 class="inline bold">
+                            {{ head | safe }}
+                        </h3>
+                        <p class="inline opacity:70">
+                            {{ desc | safe }}
+                        </p>
+                    </li>
+                {% endmacro %}
+                {{ overviewItem(
+                    head='Designer.',
+                    desc='Trained in graphic design, with experience designing almost anything <span class="space:nowrap">in every medium.</span>'
+                )}}
+                {{ overviewItem(
+                    head="Developer.",
+                    desc='Builds marketing sites, from scratch, at the speed of light, <span class="space:nowrap">that perform</span> well <span class="space:nowrap">and look nice.</span>'
+                )}}
+                {{ overviewItem(
+                    head='Director.',
+                    desc='Plans, shapes, and refines projects that play to team strengths and deliver <span class="space:nowrap"><span class="md:hidden lg:inline">impactful</span> results.</span>'
+                )}}
+            </ul>
+        </div>
+    </section>
+
+    {# Case Studies #}
+    <section class="section section:pb">
+        <div class="container flex flex:col">
+            <h2 class="relative font:serif font:32vw sm:font:20vw lg:font:16rem sm:space:nowrap leading:90 sm:leading:80 tracking:tight gradient-text bg:ink-3-i bg:fade-up-sheet4i text:center mt:48 sm:mt:0 pt:24 sm:pt:96 md:pt:112 pb:36 sm:pb:0 mb:n56 sm:mb:n16 md:mb:n24">
+                    Case studies
+            </h2>
+            <div class="relative w:100p flex flex:col sm:flex:row justify-content:between gap:28">
+                <div class="w:100p sm:w:50minus14 flex-shrink:0 ratio:1-1 sm:ratio:3-4 md:ratio:1-1 bg:sheet-5-i p:28 flex flex:col justify-content:between">
+                    <h3 class="font:3xl">
+                        Rewatch
+                    </h3>
+                    <p class="lg:font:lg opacity:70 max-w:288">
+                        Designing, building, and managing everything marketing related
+                    </p>
+                </div>
+                <div class="flex flex:col gap:28 w:100p">
+                    <div class="flex-grow:1 bg:sheet-5-i p:28 flex flex:col justify-content:between ratio:1-1 sm:ratio:unset">
+                        <h3 class="font:3xl">
+                            FireHydrant
+                        </h3>
+                        <p class="lg:font:lg opacity:70 max-w:224 lg:max-w:288">
+                            Rebuilding a site that redefines <span class="space:nowrap">a brand</span> in under 30 days
+                        </p>
+                    </div>
+                    <div class="flex-grow:1 bg:sheet-5-i p:28 flex flex:col justify-content:between ratio:1-1 sm:ratio:unset">
+                        <h3 class="font:3xl">
+                            Abstract
+                        </h3>
+                        <p class="lg:font:lg opacity:70 max-w:224 lg:max-w:288">
+                            Pivoting to an all new product <span class="space:nowrap">and reimaging</span> content platforms
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Experience #}
+    <section class="section section:pb">
         <div class="container">
-            <p class="mb:20">Todo:</p>
-            <ul class="list:disc flex flex:col gap:12">
-                <li>Add foundational analytics and events</li>
-                <li>{{ base.url }}</li>
+            {# Headline #}
+            <h2 class="flex flex:col font:serif leading:100 font:12vw sm:font:8xl md:font:11xl mb:24 sm:mb:0">
+                <div>
+                    Qualifications&nbsp;
+                </div>
+                <div>
+                    &amp; experience
+                </div>
+            </h2>
+            {# Content #}
+            <div class="relative flex flex:col-reverse sm:flex:row justify-content:between w:100p">
+                {# Col 1 #}
+                <div class="flex flex:col w:100p sm:w:50minus14 gap:48 sm:gap:40 md:gap:72 lg:gap:64 sm:pt:40 md:pt:64 lg:pt:72">
+                    {# Tools #}
+                    <div class="flex flex:col sm:max-w:320 md:max-w:384">
+                        <h3 class="bold mb:24">
+                            Tool belt:
+                        </h3>
+                        <ul class="flex flex:wrap gap:6 sm:max-w:384">
+                            {% macro toolItem(tool) %}
+                                <li class="border:1 border:white border-opacity:15 font:xs uppercase tracking:loosest radius:sm leading:100 pt:6 pb:4 px:6 color:ink-1-i">
+                                    {{ tool }}
+                                </li>
+                            {% endmacro %}
+                            {{toolItem('Figma')}}
+                            {{toolItem('Photoshop')}}
+                            {{toolItem('Illlustrator')}}
+                            {{toolItem('After Effects')}}
+                            {{toolItem('Blender')}}
+                            {{toolItem('CSS')}}
+                            {{toolItem('HTML')}}
+                            {{toolItem('Javascript')}}
+                            {{toolItem('Greensock')}}
+                            {{toolItem('NodeJS')}}
+                            {{toolItem('Github')}}
+                            {{toolItem('VSCode')}}
+                            {{toolItem('Analytics')}}
+                            {{toolItem('Contentful')}}
+                            {{toolItem('Hubspot')}}
+                        </ul>
+                    </div>
+                    {# Values #}
+                    <div class="flex flex:col w:100p">
+                        <h3 class="bold mb:24">
+                            Values:
+                        </h3>
+                        <ul class="flex justify-content:between sm:justify-content:start col-gap:14 row-gap:28 md:row-gap:28 md:col-gap:28 flex:wrap">
+                            {% macro valueItem(head, desc) %}
+                                <li class="w:100p max-w:154 md:max-w:192">
+                                    <h4 class="md:font:lg font:serif">
+                                        {{ head | safe }}
+                                    </h4>
+                                    <p class="font:sm md:font:md opacity:70">
+                                        {{ desc | safe }}
+                                    </p>
+                                </li>
+                            {% endmacro %}
+                            {{ valueItem(
+                                head='Transparency',
+                                desc='Sharing early and often <span class="space:nowrap">to prevent</span> snags later on.'
+                            )}}
+                            {{ valueItem(
+                                head='Shipping often',
+                                desc='Great enough leads to <span class="space:nowrap">better results</span> than perfect.'
+                            )}}
+                            {{ valueItem(
+                                head='Focus',
+                                desc='Doing the right work vs. <span class="space:nowrap">lots of</span> low-impact work.'
+                            )}}
+                            {{ valueItem(
+                                head='DIY-culture',
+                                desc='Working with people <span class="space:nowrap">who like</span> to make > plan.'
+                            )}}
+                        </ul>
+                    </div>
+                </div>
+                {# Col 2 #}
+                <ul class="relative w:100p sm:w:50minus14 flex-shrink:0 transform md:translate-y:12 border-t:1 border:white border-opacity:10 sm:mt:n64 md:mt:n96 mb:48 sm:mb:0">
+                    {% macro job(icon, head, role, date, desc) %}
+                        <li data-accordion class="relative w:100p border-b:1 border:white border-opacity:10">
+                            <button data-accordion-button aria-controls="accordion-{{ head | slugify }}" aria-expanded="false" type="button" class="relative w:100p flex justify-content:between align-items:center py:20 md:py:24 text:left leading:100 opacity:75 transition:200">
+                                <div data-job-title class="flex align-items:center gap:8 sm:gap:16 lg:gap:24">
+                                    {{ icon }}
+                                    <h3 class="font:xl sm:font:3xl">
+                                        {{ head }}
+                                    </h3>
+                                </div>
+                                <div class="flex align-items:center gap:16 lg:gap:48 font:xs md:font:sm lg:font:md">
+                                    <p class=" sm:hidden md:block opacity:70 w:112 lg:w:128">
+                                        {{ role }}
+                                    </p>
+                                    <p class="hidden sm:block opacity:70 sm:w:64 md:w:72">
+                                        {{ date }}
+                                    </p>
+                                    <div data-accordion-carat class="w:28 h:28 radius:full border:1 border:white border-opacity:30 flex align-items:center justify-content:center">
+                                        {{ icons.chevDown('w:16 mt:2')}}
+                                    </div>
+                                </div>
+                            </button>
+                            <div data-accordion-content id="accordion-{{ head | slugify }}" class="relative overflow:hidden" style="height:0; opacity:0; visibility:hidden;">
+                                <p class="font:md md:font:lg lg:font:lg opacity:70 pb:20 md:pb:24">
+                                    {{ desc | safe }}
+                                </p>
+                            </div>
+                        </li>
+                    {% endmacro %}
+                    {{ job(
+                        icon=icons.customerRewatchIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='Rewatch',
+                        role='Sr. Web Designer',
+                        date='1.75 years',
+                        desc='As the first and only designer on the marketing side of things, Mike designs and builds anything marketing related—from ads to the <span class="space:nowrap">marketing site.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerFirehydrantIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='FireHydrant',
+                        role='Sr. Web Developer',
+                        date='5 months',
+                        desc='Mike rebuilt and redesigned the entire marketing website within his first <span class="space:nowrap">three weeks</span> while also shipping multiple LP’s and <span class="space:nowrap">overhauling the brand.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerAbstractIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='Abstract',
+                        role='Sr. Web Designer',
+                        date='7 months',
+                        desc='Mike designed and built the marketing websites, mainly focusing on <span class="space:nowrap">content hubs.</span> He also helped with product design <span class="space:nowrap">and marketing ops.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerBaunfireIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='Baunfire',
+                        role='Sr. Web Designer',
+                        date='6 months',
+                        desc='Mike worked with external marketing teams at well-funded startups <span class="space:nowrap">and VCs to</span> strategize, design, and elevate <span class="space:nowrap">their marketing websites.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerGmrIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='GMR',
+                        role='Digital Designer',
+                        date='2 years',
+                        desc='Mike designed interactive apps, games, websites, and other digital experiences for Fortune 500 companies with <span class="space:nowrap">large, global teams.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerStillingIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='Stilling',
+                        role='Freelance',
+                        date='2 years',
+                        desc='Mike sold, managed, and executed design work, including branding, web design, and animation,for numerous clients, <span class="space:nowrap">across multiple industries.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerMillercoorsIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='MillerCoors',
+                        role='Designer',
+                        date='1 year',
+                        desc='At MillerCoors, Mike designed motion, POS, and OOH graphics to be presented in stadiums, on the web, on television, <span class="space:nowrap">and at events.</span>'
+                    )}}
+                    {{ job(
+                        icon=icons.customerHiebingIcon('w:20 sm:w:28 flex-shrink:0'),
+                        head='Hiebing',
+                        role='Motion Designer',
+                        date='3 mos',
+                        desc='At Hiebing, Mike worked with art and creative directors to create motion graphics for web, social, <span class="space:nowrap">and television placements.</span>'
+                    )}}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {# Articles #}
+    <section class="section section:pb">
+        <div class="container">
+            {# Headline #}
+            <h2 class="flex flex:col font:serif leading:100 font:12vw sm:font:8xl md:font:11xl mb:24 sm:mb:48">
+                <div class="line-through">
+                    Thoughts&nbsp;
+                </div>
+                <div>
+                    Suggestions
+                </div>
+            </h2>
+            <ul class="flex gap:28">
+                <li class="w:100p flex ratio:3-4 bg:sheet-4-i"></li>
+                <li class="w:100p flex ratio:3-4 bg:sheet-4-i"></li>
+                <li class="w:100p flex ratio:3-4 bg:sheet-4-i"></li>
             </ul>
         </div>
     </section>
