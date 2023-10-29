@@ -1,0 +1,157 @@
+---
+layout: "main.njk"
+title: "FireHydrant"
+seoTitle: "FireHydrant x Mike Stilling: Building at warp speed"
+seoDescription: "See how Mike designed and built everything marketing related for Rewatch"
+ogTitle: "Rewatch x FireHydrant: Building at warp speed"
+ogDesc: "See how Mike designed and built everything marketing related for Rewatch"
+ogImage: "/assets/images/og/default.png"
+ogImageAlt: "This is the alt text for social cards images"
+role: "Sr. Web Developer"
+tags: project
+theme: dark
+changefreq: daily
+---
+{% import "_icons.njk" as icons %}
+
+<main>
+
+    {# Hero #}
+    <section class="section">
+        <div class="container pt:112 sm:pt:144 md:pt:192 pb:48 sm:pb:80 md:pb:96 flex flex:col gap:48 sm:gap:64 md:gap:96">
+            {# Content #}
+            <div class="relative flex flex:col md:flex:row align-items:center md:align-items:end md:justify-content:between text:center md:text:left">
+                <h1 class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                    Incident<br> <span class="space:nowrap">Management</span>
+                </h1>
+                <p class="font:5vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 max-w:576 md:max-w:50p md:mb:16">
+                    FireHydrant helps engineering teams automate, respond to, learn from, and improve upon <span class="space:nowrap">their incidents.</span>
+                </p>
+            </div>
+            <div class="flex ratio:16-9 bg:sheet-4-i ml:n24 sm:ml:0 w:plus48 sm:w:100p"></div>
+        </div>
+    </section>
+
+    {# Content #}
+    <section class="section">
+        <div class="container flex flex:col align-items:center">
+            {% set normalP = 'font:xl sm:font:2xl leading:170 opacity:80' %}
+            {# Headline #}
+            <div class="content:experience">
+                <h2 class="intro">
+                    During the economic downturn of late 2022 - early 2023, FireHydrant's newly formed marketing team was trying to offset a slowing outbound sales pipeline with consistent inbound leads. Mike was responsible for rapidly re/designing and re/building touchpoints that supported <span class="space:nowrap">this effort.</span>
+                </h2>
+                <p>
+                    Within his first 30 days at FireHydrant, Mike redesigned and rebuilt the entire marketing site and shipped a brand-new "data story" campaign. Within his first 60, he helped launch an all new documentation site, and overhauled the FireHydrant visual identity; inciting a movement to rethink <span class="space:nowrap">the product UI.</span>
+                </p>
+                <p>
+                    To accomplish this work at the velocity required, Mike relied heavily on his technical experience, while thoughtfully refining and reinforcing what was already working with the brand, and collaborating effectively with a new, <span class="space:nowrap">unfamiliar team.</span>
+                </p>
+            </div>
+            {# List #}
+            <ul class="w:100p max-w:640 md:max-w:none flex flex:col md:flex:row md:gap:28 justify-content:between font:lg md:font:xl border-t:1 border:white border-opacity:10 md:border-t:0 border:dashed mb:36 sm:mb:48 md:mb:64 mt:n24 md:mt:0">
+                {% macro overviewItem(head, desc) %}
+                    <li class="w:100p md:max-w:304 py:24 border-b:1 border:white border-opacity:10 md:border-b:0 border:dashed">
+                        <h3 class="block bold">
+                            {{ head | safe }}
+                        </h3>
+                        <p class="block opacity:70">
+                            {{ desc | safe }}
+                        </p>
+                    </li>
+                {% endmacro %}
+                {{ overviewItem(
+                    head="Adaptability",
+                    desc='The ability to adhere to, improve upon, and flourish within an inherited situation that is less than ideal.'
+                )}}
+                {{ overviewItem(
+                    head='Technical experience',
+                    desc='Familiarity that stems from hands-on involvement working through tasks that directly relate to the current.'
+                )}}
+                {{ overviewItem(
+                    head='Collaboration',
+                    desc='Utilizing a team to accomplish more and better work than otherwise possible as a sole operator.'
+                )}}
+            </ul>
+            {# Adaptability #}
+            <div class="content:experience">
+                <h3>
+                    <span class="italic font:serif">on</span> Adaptability
+                </h3>
+                <p>
+                    While interviewing with FireHydrant, the business outlook was fantastic... Almost immediately upon starting that had changed. So much so, that within Mike's first month, there was a round of layoffs that impacted ~20% of the company.
+                </p>
+                <p>
+                    With that came the need for action, fast. This left little to no time for onboarding; Mike was coding and shipping his first week.
+                </p>
+                <p>
+                    To add to the stress, the existing marketing site was cobbled together by an external agency using a framework that Mike was unfamiliar with along with a complete mismatch of styles, and a dumpster fire of a CMS.
+                </p>
+                <p>
+                    To recap, the brand was rough, the site was a mess, the team was new, the outlook was bleak, and time, non-existent. So naturally, Mike's first suggestion while working at FireHydrant being to rebuild the entire marketing site initially sounded insane.
+                </p>
+                <h4>
+                    Rebuild <span class="font:serif italic">and</span> refine
+                </h4>
+                <p>
+                    Getting up to speed on the framework, detangling the CMS, and unifying the styling across the existing site would take longer than just rebuilding it from scratch. With that, the unfamiliarity would linger for months, adding time to future projects.
+                </p>
+                <p>
+                    To qualm fears, Mike took a gamble and promised the rebuild to take three weeks or less. There was still some hesitation, so within his first week, Mike rebuilt the homepage overnight using his favorite tools.
+                </p>
+                <p>
+                    This exercise helped communicate a few things. First, it provided a clear example of what the site could look like and that a massive jump/change in the brand itself wasn't needed. Specifically, it ensured the brand could benefit from it's existing recognition. Second, it built trust toward Mike being capable of delivering on his promise. Beyond that, it showed the code itself was easier to work on, maintain, and understand by <span class="space:nowrap">the greater team.</span>
+                </p>
+                <p>
+                    The rebuild was approved and Mike got to work. He was able to deliver on his promise, and the new site was launched within three weeks improving uniformity, accessibility, performance, maintainability, and the overall brand.
+                </p>
+            </div>
+            {# Technical Experience #}
+            <div class="content:experience">
+                <h3>
+                    <span class="italic font:serif">on</span> Technical Experience
+                </h3>
+                <p>
+                    The key to all of this progress in a short amount of time was Mike's direct experience doing these exact tasks: designing and building brands, campaigns, and websites from scratch for lean SaaS companies targetting enterprise customers.
+                </p>
+            </div>
+            {# Impact #}
+            <div class="content:experience">
+                <h3>
+                    <span class="italic font:serif">Prioritizing</span> Impact
+                </h3>
+                <p>
+                    How we spend our time is always a tradeoff. To actively focus on "X" means not focusing on "Y" — and, when there's an endless pile of work in front of us, it's easy to lose sight of this.
+                </p>
+            </div>
+            {# Takeaways #}
+            <div class="content:experience">
+                <h3>
+                    Key <span class="italic font:serif">Takeaways</span>
+                </h3>
+                <p>
+                    Throughout Mike's ~2 years at Rewatch, he has grown a lot as a designer, developer, and director. A few key takeaways from his time there are:
+                </p>
+                <h4>
+                    First, nail the basics
+                </h4>
+                <p>
+                    Whether it's design, development, or marketing — the fundamental aspects of anything are what matter most. Make sure they work before building on top of them.
+                </p>
+                <h4>
+                    Simple works
+                </h4>
+                <p>
+                    At one point, Mike tried building out 3D UI mocks like Microsoft Fluent uses... It was a lot, and a total flop. He reverted to regular 1:1 UI mocks and they looked just as good. In summary, simple doesn't mean boring or ugly. Usually it's easier to build well and understand anyway.
+                </p>
+                <h4>
+                    Marketing is part of the job
+                </h4>
+                <p>
+                    Just like designers get ideas and feedback from their friends in marketing, marketers should be getting ideas and feedback from folks in design. As creators, we have the unique ability to build ideas outside of a word doc, take advantage of that.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</main>

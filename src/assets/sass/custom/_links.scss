@@ -43,8 +43,55 @@
 }
 
 // Inline Links
-.link-rg   { @include apply("color:link-rg underline"); }
-.link-rg-i { @include apply("color:link-rg-i underline"); }
+.link {
+    @include apply("relative inline-block transition:400");
+    &:before { @include apply("absolute right:0 bottom:6 w:100p h:1"); content: ''; transition: width 400ms cubic-bezier(0.7, 0, 0.2, 1) 0ms; }
+    &:after { @include apply("absolute left:0 bottom:6 w:0 h:1"); content: ''; transition: width 150ms cubic-bezier(0, 0.7, 0.2, 1) 0ms;}
+    @media (hover: hover) {
+        &:hover {
+            @include apply("transition:400");
+            &:before { @include apply("w:0"); transition: width 150ms cubic-bezier(0, 0.7, 0.2, 1) 0ms; }
+            &:after  { @include apply("w:100p"); transition: width 400ms cubic-bezier(0.7, 0, 0.2, 1) 0ms; }
+        }
+    }
+    &:focus, &:focus-visible {
+        @include apply("outline:none");
+        &:before { @include apply("bottom:4 left:n2 w:plus4 h:28 radius:md bg-opacity:20 border:1"); transition: width 0ms linear 0ms; }
+        &:after  { @include apply("hidden"); }
+    }
+}
+
+.link-rg-i {
+    @include apply("color:ink-3-i");
+    &:before { @include apply("bg:link-rg-i"); }
+    &:after { @include apply("bg:link-rg-i"); }
+    @media (hover: hover) {
+        &:hover {
+            @include apply("color:link-hv-i");
+            &:before { @include apply("bg:link-hv-i"); }
+            &:after  { @include apply("bg:link-hv-i"); }
+        }
+    }
+    &:focus, &:focus-visible {
+        &:before { @include apply("border:link-rg-i bg-opacity:20 border-opacity:50"); }
+    }
+}
+
+.link-rg {
+    @include apply("color:ink-3");
+    &:before { @include apply("bg:link-rg"); }
+    &:after { @include apply("bg:link-rg"); }
+    @media (hover: hover) {
+        &:hover {
+            @include apply("color:link-hv");
+            &:before { @include apply("bg:link-hv"); }
+            &:after  { @include apply("bg:link-hv"); }
+        }
+    }
+    &:focus, &:focus-visible {
+        &:before { @include apply("border:link-rg bg-opacity:20 border-opacity:50"); }
+    }
+}
 
 // Inline Link Hovers
 @media (hover: hover) {

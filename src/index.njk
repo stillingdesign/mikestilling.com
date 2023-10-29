@@ -11,7 +11,7 @@ changefreq: daily
 ---
 {% import "_icons.njk" as icons %}
 
-<main >
+<main>
     
     {# Hero #}
     <section class="section">
@@ -86,38 +86,38 @@ changefreq: daily
                     Case studies
             </h2>
             <div class="relative w:100p flex flex:col sm:flex:row justify-content:between gap:28">
-                <div class="w:100p sm:w:50minus14 flex-shrink:0 ratio:1-1 sm:ratio:3-4 md:ratio:1-1 bg:sheet-5-i p:28 flex flex:col justify-content:between">
+                <a href="/experience/rewatch/" class="w:100p sm:w:50minus14 flex-shrink:0 ratio:1-1 sm:ratio:3-4 md:ratio:1-1 bg:sheet-5-i p:28 flex flex:col justify-content:between">
                     <h3 class="font:3xl">
                         Rewatch
                     </h3>
                     <p class="lg:font:lg opacity:70 max-w:288">
                         Designing, building, and managing everything marketing related
                     </p>
-                </div>
+                </a>
                 <div class="flex flex:col gap:28 w:100p">
-                    <div class="flex-grow:1 bg:sheet-5-i p:28 flex flex:col justify-content:between ratio:1-1 sm:ratio:unset">
+                    <a href="/experience/firehydrant/" class="flex-grow:1 bg:sheet-5-i p:28 flex flex:col justify-content:between ratio:1-1 sm:ratio:unset">
                         <h3 class="font:3xl">
                             FireHydrant
                         </h3>
                         <p class="lg:font:lg opacity:70 max-w:224 lg:max-w:288">
                             Rebuilding a site that redefines <span class="space:nowrap">a brand</span> in under 30 days
                         </p>
-                    </div>
-                    <div class="flex-grow:1 bg:sheet-5-i p:28 flex flex:col justify-content:between ratio:1-1 sm:ratio:unset">
+                    </a>
+                    <a href="/experience/abstract/" class="flex-grow:1 bg:sheet-5-i p:28 flex flex:col justify-content:between ratio:1-1 sm:ratio:unset">
                         <h3 class="font:3xl">
                             Abstract
                         </h3>
                         <p class="lg:font:lg opacity:70 max-w:224 lg:max-w:288">
                             Pivoting to an all new product <span class="space:nowrap">and reimaging</span> content platforms
                         </p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     {# Experience #}
-    <section class="section section:pb">
+    <section class="section pb:48 sm:pb:72">
         <div class="container">
             {# Headline #}
             <h2 class="flex flex:col font:serif leading:100 font:12vw sm:font:8xl md:font:11xl mb:24 sm:mb:0">
@@ -265,7 +265,7 @@ changefreq: daily
                         head='Stilling',
                         role='Freelance',
                         date='2 years',
-                        desc='Mike sold, managed, and executed design work, including branding, web design, and animation,for numerous clients, <span class="space:nowrap">across multiple industries.</span>'
+                        desc='Mike sold, managed, and executed design work, including branding, web design, and animation, for numerous clients, <span class="space:nowrap">across multiple industries.</span>'
                     )}}
                     {{ job(
                         icon=icons.customerMillercoorsIcon('w:20 sm:w:28 flex-shrink:0'),
@@ -283,6 +283,27 @@ changefreq: daily
                     )}}
                 </ul>
             </div>
+        </div>
+    </section>
+
+    {# Logo wall #}
+    <section class="section section:pb">
+        <div class="container flex flex:col sm:flex:row align-items:center">
+            <h3 class="flex-shrink:0 font:2xs sm:font:xs uppercase opacity:70 tracking:loosest mb:12 sm:mb:24 sm:mb:n2 sm:pr:64 md:pr:96">
+                Agency clients include
+            </h3>
+            <ul class="relative flex w:100p w:100p justify-content:between pb:56 sm:pb:0 border-b:1 border:white border-opacity:10 sm:border-b:0">
+                {% macro client(icon) %}
+                    <li class="w:auto flex align-items:center justify-content:center opacity:30">
+                        {{ icon }}
+                    </li>
+                {% endmacro %}
+                {{ client(icons.customerHBO('w:48 sm:w:80 md:w:96')) }}
+                {{ client(icons.customerATT('w:40 sm:w:72 md:w:96')) }}
+                {{ client(icons.customerNissan('w:72 sm:w:96 md:w:112'), 'true') }}
+                {{ client(icons.customerXfinity('w:36 sm:w:64 md:w:80')) }}
+                {{ client(icons.customerVisa('w:28 sm:w:40 md:w:56')) }}
+            </ul>
         </div>
     </section>
 
