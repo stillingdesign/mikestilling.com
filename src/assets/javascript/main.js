@@ -1,11 +1,17 @@
 import barba from "@barba/core";
 
 // Page Transitions and Scripts
+import {tabs} from './interactions/tabs.js';
 import {enterDefault, leaveDefault} from './transitions/default.js';
-import {enterHome, leaveHome} from './transitions/home.js';
+import {onceHome, enterHome, leaveHome} from './transitions/home.js';
+
+barba.hooks.once(() => {
+    tabs();
+});
 
 barba.hooks.enter(() => {
     window.scrollTo(0, 0);
+    tabs();
 });
 
 barba.init({
@@ -24,7 +30,7 @@ barba.init({
             name: 'home',
             to: { namespace: ['home'] },
             once({next}) {
-                enterHome(next.container)
+                onceHome(next.container)
             },
             leave: ({current}) => leaveHome(current.container),
             enter({next}) {
