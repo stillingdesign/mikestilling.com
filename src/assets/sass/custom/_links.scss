@@ -100,7 +100,22 @@
 }
 
 // Inline Link Focus
+.focus-visible:focus-visible,
 .link-rg:focus-visible,
 .link-rg-i:focus-visible { @include apply("color:white bg:primary-rg outline:none")}
+
+// Graphical links
+.case-study-link { @include apply("transition:300 cubic-out"); }
+.case-study-link > div > svg { @include apply("transition:300 cubic-out"); }
+
+@media (hover: hover) {
+    .case-study-link.rewatch:hover,
+    .case-study-link.firehydrant:hover,
+    .case-study-link.abstract:hover { transition:background-color 625ms cubic-bezier(0, 0.66, 0.33, 1) 50ms;}
+    .case-study-link.rewatch:hover { background-color: #206BFF; }
+    .case-study-link.firehydrant:hover { background-color: #D10034; }
+    .case-study-link.abstract:hover { background-color: #6A38F9; }
+    .case-study-link:hover > div > svg { @include apply("translate-x:8 transition:300 delay:50 cubic-out"); }
+}
 
 /* purgecss end ignore */

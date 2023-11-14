@@ -5,14 +5,45 @@
 
 <header data-header class="absolute top:24 sm:top:40 left:0 z:10 w:100p flex flex:col align-items:center justify-content:center py:6 sm:px:48 border-b:1 border:ink-3 border:dashed border-opacity:6 {% if theme == 'dark' %}color:ink-3-i{% endif %}">
     <div class="container flex align-items:center justify-content:center md:justify-content:between">
-        {# Logo #}
-        <div class="relative flex align-items:center justify-content:between sm:justify-content:start w:100p sm:w:auto gap:4">
+        <div class="relative flex align-items:center justify-content:between w:100p">
+            {# Logo #}
             <a href="/" class="pt:10 pb:6 px:12 ml:n12 inline-flex align-items:center justify-content:center radius:full border:1 focus:primary font:serif regular font:lg tracking:tight leading:100">
                 Mike Stilling
             </a>
-            {% if tags == 'project' %}{{ icons.x('hidden sm:block w:16')}}{% endif %}
-            {% if title == 'Rewatch' %}{{ icons.customerRewatch('w:96 ml:12')}}{% endif %}
-            {% if title == 'FireHydrant' %}{{ icons.customerFirehydrant('w:128 ml:12 mt:n2')}}{% endif %}
+            {# Nav #}
+            <nav class="flex align-items:center gap:16">
+                <p class="hidden sm:block font:2xs uppercase tracking:loosest opacity:50">
+                    Case studies
+                </p>
+                <div data-tab-group class="relative z:1 flex align-items:center font:sm h:36 px:4 border:1 border:white border-opacity:10 bg:white bg-opacity:4 radius:full overflow:hidden">
+                    <div data-tab-active class="absolute block h:28 radius:full bg-opacity:20 border:1 border-opacity:50 bg:primary-rg border:primary-rg color:link-hv-i" style="transition: all 300ms cubic-bezier(0, 0.78, 0.22, 1) 0ms; opacity:0;"></div>
+                    <ul class="relative z:1 flex align-items:center">
+                        {% macro experience(link, icon, head) %}
+                        <li>
+                            <a data-tab href="/experience/{{link}}/" class="flex align-items:center gap:4 ml:n1 pl:8 pr:10 h:28 radius:full bg-opacity:10 border:1 border-opacity:30 focus-visible">
+                                <div class="hidden sm:block">{{ icon }}</div>
+                                {{ head }}
+                            </a>
+                        </li>
+                        {% endmacro %}
+                        {{ experience(
+                            link='rewatch',
+                            icon=icons.customerRewatchIcon('w:14'),
+                            head='Rewatch'
+                        )}}
+                        {{ experience(
+                            link='firehydrant',
+                            icon=icons.customerFirehydrantIcon('w:18 mr:n2'),
+                            head='FireHydrant'
+                        )}}
+                        {{ experience(
+                            link='abstract',
+                            icon=icons.customerAbstractIcon('w:14'),
+                            head='Abstract'
+                        )}}
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 </header>
