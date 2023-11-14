@@ -121,6 +121,11 @@ $utilities: (
             46: 2.875rem,
         ),
     ),
+    transition-delay: (
+        variants: (
+            50: 50ms,
+        ),
+    ),
     transition-timing-function: (
         variants: (
             ease-out: ease-out,

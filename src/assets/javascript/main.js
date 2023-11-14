@@ -6,7 +6,7 @@ import {enterDefault, leaveDefault} from './transitions/default.js';
 import {onceHome, enterHome, leaveHome} from './transitions/home.js';
 
 barba.hooks.once(() => {
-    tabs();
+    window.addEventListener('load', () => { tabs(); });
 });
 
 barba.hooks.enter(() => {
