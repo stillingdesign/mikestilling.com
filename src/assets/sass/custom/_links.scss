@@ -103,4 +103,13 @@
 .link-rg:focus-visible,
 .link-rg-i:focus-visible { @include apply("color:white bg:primary-rg outline:none")}
 
+// Graphical links
+.case-study-link .fade-out { @include apply("transition:200 linear"); }
+.case-study-link > div > svg { @include apply("transition:300 cubic-out"); }
+
+@media (hover: hover) {
+    .case-study-link:hover .fade-out { opacity:0; transition:opacity 300ms linear 50ms;}
+    .case-study-link:hover > div > svg { @include apply("translate-x:8 transition:300 delay:50 cubic-out"); }
+}
+
 /* purgecss end ignore */
