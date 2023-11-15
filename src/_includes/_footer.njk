@@ -17,15 +17,11 @@
         </p>
         <div class="flex-shrink:0 block w:0 h:72 border-l:1 {% if theme == 'dark' %}border:edge-2-i{% else %}border:edge-2{% endif %}"></div>
         <ul class="w:100p flex align-items:center justify-content:end gap:4">
-            {% for collection in navigation | selectattr("subFooter") %}
-                {% for page in collection.menuItems %}
-                    <li class="mr:n12">
-                        <a href="{{ page.url }}" class="inline-block font:sm opacity:70 py:6 px:12 radius:full space:nowrap border:1 focus:primary hover:opacity:100 transition:100 {% if theme == 'dark' %}hover:color:link-hv-i{% else %}hover:color:link-hv{% endif %}">
-                            {{ page.label }}
-                        </a>
-                    </li>
-                {% endfor %}
-            {% endfor %}
+            <li class="mr:n12">
+                <a href="https://mikes-portfolio.netlify.app/" class="inline-block font:sm opacity:70 py:6 px:12 radius:full space:nowrap border:1 focus:primary hover:opacity:100 transition:100 {% if theme == 'dark' %}hover:color:link-hv-i{% else %}hover:color:link-hv{% endif %}">
+                    Previous Portfolio
+                </a>
+            </li>
         </ul>
     </div>
 </footer>

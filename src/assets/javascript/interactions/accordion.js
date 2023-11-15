@@ -2,9 +2,9 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
 
-// Toggle accordions if they exist
-if(document.querySelector('[data-accordion]')) {
+export const accordion = function (){
     const accordions = document.querySelectorAll('[data-accordion]');
+    // Function
     function toggleAccordion(el, event) {
         const button = el.querySelector('[data-accordion-button]');
         const carat = el.querySelector('[data-accordion-carat]');

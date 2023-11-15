@@ -6,6 +6,7 @@ ogTitle: "This is the title that shows up in social cards"
 ogDesc: "This is the description that shows up in social cards"
 ogImage: "/assets/images/og/default.png"
 ogImageAlt: "This is the alt text for social cards images"
+barba: home
 theme: dark
 changefreq: daily
 ---
@@ -18,27 +19,29 @@ changefreq: daily
         <div class="container pt:112 sm:pt:144 md:pt:192 pb:48 sm:pb:80 md:pb:96 flex flex:col gap:48 sm:gap:64 md:gap:96">
             {# Content #}
             <div class="relative flex flex:col md:flex:row align-items:center md:align-items:end md:justify-content:between text:center md:text:left">
-                <h1 class="font:serif font:12vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                <h1 data-headline class="font:serif font:12vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
                     Design-led growth <span class="space:nowrap">for SaaS companies</span>
                 </h1>
-                <p class="font:7vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 md:mb:14 lg:mb:16 tracking:tight">
+                <p data-subhead class="font:7vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 md:mb:14 lg:mb:16 tracking:tight">
                     Brands, campaigns, and<br class="hidden md:block"/> <span class="space:nowrap sm:space:normal md:space:nowrap">websites that drive revenue.</span>
                 </p>
             </div>
             {# Graphics #}
             <div class="relative w:100p flex flex:col md:flex:row-reverse justify-content:between">
                 {# Image #}
-                <div class="relative flex w:100p md:w:10-12 ratio:1-1 sm:ratio:16-9 bg:sheet-4-i mb:16 md:mb:0"></div>
+                <div class="relative flex w:100p md:w:10-12 ratio:1-1 sm:ratio:16-9 bg:sheet-4-i mb:16 md:mb:0">
+                    <div data-reveal class="absolute top:0 left:0 w:100p h:100p transform transform:top bg:sheet-6-i"></div>
+                </div>
                 {# Caption #}
                 <div class"relative">
-                    <div class="hidden md:block w:24 h:1 bg:primary-rg mb:16"></div>
-                    <p class="flex gap:8 md:block leading:140 opacity:70 font:xs sm:font:sm justify-content:center sm:justify-content:start">
-                        Mike and family<br class="hidden md:block">
+                    <div data-dash class="hidden md:block w:24 h:1 bg:primary-rg mb:16"></div>
+                    <div class="flex gap:8 md:block leading:140 opacity:70 font:xs sm:font:sm justify-content:center sm:justify-content:start">
+                        <p data-caption>Mike and family</p>
                         <span class="md:hidden">·</span>
-                        Black River Falls, WI<br class="hidden md:block">
+                        <p data-caption>Black River Falls, WI</p>
                         <span class="md:hidden">·</span>
-                        <em>Aug. 2023</em>
-                    </p>
+                        <p data-caption class="italic">Aug. 2023</p>
+                    </div>
                 </divn>
             </div>
         </div>
