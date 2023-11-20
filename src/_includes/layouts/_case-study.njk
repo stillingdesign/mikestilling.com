@@ -46,8 +46,8 @@ changefreq: monthly
                 <span class="opacity:70">Still wanting more? Check out these other case studies from Mike</span>
             </div>
             <div class="w:100p max-w:640 flex gap:48 section:pb">
-                {% for post in collections.casestudy %}
-                    <p>test</p>
+                {% for post in collections.casestudy | removeCurrent(title) %}
+                    <p>{{ post.data.title }}</p>
                 {% endfor %}
             </div>
         </div>

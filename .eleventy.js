@@ -35,6 +35,14 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addFilter("dateShort", (dateObj) => { return DateTime.fromISO(dateObj).toLocaleString(DateTime.DATE_SHORT); });
     eleventyConfig.addFilter("dateFull",  (dateObj) => {  return DateTime.fromISO(dateObj).toLocaleString(DateTime.DATE_FULL); });
 
+    // Filters
+
+    // Remove current post from results
+    eleventyConfig.addFilter('removeCurrent', function(collection, title) {
+        const filtered = collection.filter(item => item.data.title !== title)
+        return filtered;
+    });
+
     // Output
     return {
         dir: {
