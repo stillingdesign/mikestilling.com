@@ -34,16 +34,19 @@ changefreq: monthly
     {# Closing #}
     <section class="section">
         <div class="container flex flex:col align-items:center">
-            <div class="flex gap:4 mb:24">
-                <div class="w:4 h:4 radius:full bg:ink-3-i"></div>
-                <div class="w:4 h:4 radius:full bg:ink-3-i"></div>
-                <div class="w:4 h:4 radius:full bg:ink-3-i"></div>
-            </div>
-            <div class="pt:48 pb:40 w:100p max-w:640 border-y:1 border:white border-opacity:10 text:center font:serif italic font:5xl">
-                Oof, that was a lot. <span class="space:nowrap">Thanks for reading!</span>
+            <img
+                src="/assets/images/graphics/finish-line.svg"
+                alt="finish line"
+                width="640" height="88"
+                class="relative w:100p h:auto max-w:640 z:1"
+                loading="lazy"
+                decoding="async"
+            />
+            <div class="pt:48 pb:40 w:100p max-w:640 border-y:1 border:white border-opacity:10 text:center font:serif italic font:4xl sm:font:5xl">
+                {{ closing | safe}}
             </div>
             <div class="pt:16 pb:12 w:100p max-w:640 border-b:1 border:white border-opacity:10 text:center font:sm uppercase tracking:loosest">
-                <span class="opacity:70">Still wanting more? Check out these other case studies from Mike</span>
+                <span class="opacity:70">Still wanting more? Check out <span class="space:nowrap">these other case studies from Mike</span></span>
             </div>
             <div class="w:100p max-w:640 flex gap:48 section:pb">
                 {% for post in collections.casestudy | removeCurrent(title) %}
