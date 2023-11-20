@@ -75,7 +75,7 @@
         }
     }
     &:focus, &:focus-visible {
-        &:before { @include apply("border:link-rg-i bg-opacity:20 border-opacity:50"); }
+        &:before { @include apply("bottom:6 border:primary-hv bg:primary-hv bg-opacity:100 border-opacity:100 color:white z:n1"); }
     }
 }
 

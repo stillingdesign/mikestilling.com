@@ -6,7 +6,7 @@ seoDescription: "See how Mike designed and built everything marketing related fo
 ogTitle: "Rewatch x Mike Stilling: Designing for growth"
 ogDesc: "See how Mike designed and built everything marketing related for Rewatch"
 ogImage: "/assets/images/og/rewatch.jpg"
-ogImageAlt: "This is the alt text for social cards images"
+ogImageAlt: "A screenshot of Rewatch's homepage hero section that Mike designed"
 role: "Sr. Web Designer"
 headline: Meet less. <span class="space:nowrap">Build more.</span>
 subhead: Rewatch saves, summarizes, and shares your company's <span class="sm:space:nowrap">meetings and</span> screen recordings <span class="space:nowrap">in a collaborative format.</span>
