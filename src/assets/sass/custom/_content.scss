@@ -9,7 +9,8 @@
     & > h4,
     & > h5,
     & > h6,
-    & > p { @include apply("w:100p max-w:640"); }
+    & > p,
+    & > pre { @include apply("w:100p max-w:640"); }
     & > h2:first-child { @include apply("font:2xl sm:font:3xl mb:24 sm:mb:32"); }
     & > h3 { @include apply("font:4xl sm:font:5xl mb:14 sm:mb:20"); }
     & > h4 { @include apply("font:2xl sm:font:3xl mb:12 sm:mb:16"); }
@@ -17,6 +18,19 @@
     & > p + h3 { @include apply("mt:48 sm:mt:64"); }
     & > p + h4 { @include apply("mt:36 sm:mt:48"); }
     & > p + p { @include apply("mt:20 sm:mt:28"); }
+    & > pre + p,
+    & > p + pre { @include apply("mt:20 sm:mt:28"); }
     p:last-child { @include apply("mb:48 sm:mb:64"); }
     figcaption { @include apply("font:sm sm:font:md font:serif italic tracking:normal opacity:70 leading:130"); }
+    & > pre { @include apply("border:1 border:white border-opacity:10"); }
+
+    mark { @include apply('bg:primary-rg bg-opacity:30 color:ink-3-i'); }
+
+    p > code {
+        @include apply("radius:sm border:1");
+        font-size: 0.895em;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        &:before { @include apply("w:2 inline-block"); content: ''; }
+        &:after  { @include apply("w:2 inline-block"); content: ''; }
+    }
 }

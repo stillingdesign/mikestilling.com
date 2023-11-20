@@ -48,7 +48,7 @@
         <div class="relative w:100p">
 
             {# Header #}
-            {% include "_header.njk" %}
+            {% include "components/_header.njk" %}
             
             {# Nesting for smooth scroll if wanted later on #}
             <div id="smooth-wrapper" data-barba="container" data-barba-namespace="{{ barba }}">
@@ -58,7 +58,7 @@
                     {{ content | safe }}
 
                     {# Footer #}
-                    {% include "_footer.njk" %}
+                    {% include "components/_footer.njk" %}
                 </div>
             </div>
 
