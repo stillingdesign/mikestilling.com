@@ -68,9 +68,9 @@ changefreq: monthly
                         )}}
                     </div>
                     {# UI #}
-                    <div data-rewatch-hero-img class="relative z:2 flex ratio:16-9 bg:sheet-1 w:100p shadow:xl radius:md sm:radius:lg overflow:hidden">
+                    <div data-rewatch-hero-img-outer class="relative z:2 flex flex:col ratio:16-9 bg:sheet-1 w:100p shadow:xl radius:md sm:radius:lg overflow:hidden">
                         {# Browser #}
-                        <div class="absolute top:0 left:0 w:100p h:32 sm:h:48 flex align-items:center justify-content:between px:8 sm:px:16 border-b:1 border:black border-opacity:4 color:ink-1" style="background-color:#ECECEE;">
+                        <div class="relative flex-shrink:0 z:2 w:100p h:32 sm:h:48 flex align-items:center justify-content:between px:8 sm:px:16 border-b:1 border:black border-opacity:4 color:ink-1" style="background-color:#ECECEE;">
                             <div class="flex gap:8 w:32 sm:w:72">
                                 <div class="w:8 h:8 sm:w:12 sm:h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#ED6A5E;"></div>
                                 <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#F5BE4F;"></div>
@@ -84,6 +84,19 @@ changefreq: monthly
                                 {{ icons.macPlus('w:20 sm:w:24 opacity:50')}}
                             </div>
                         </div>
+                        <img
+                            src="/assets/images/graphics/rewatch-page-header.webp"
+                            alt="rewatch website header section"
+                            width="1152" height="37"
+                            class="relative w:100p h:auto max-w:none z:2 shadow:headerLight"
+                        />
+                        <img
+                            data-rewatch-hero-img-inner
+                            src="/assets/images/graphics/rewatch-page-hero.webp"
+                            alt="rewatch marketing website design"
+                            width="1152" height="1440"
+                            class="relative w:100p h:auto max-w:none z:1"
+                        />
                     </div>
                 </div>
             </div>

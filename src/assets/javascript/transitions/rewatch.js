@@ -20,6 +20,7 @@ function rewatchScroll() {
         .to("[data-rewatch-headline]", {y: 224, opacity: 0}, 0)
         .to("[data-rewatch-gradient]", {opacity: 0}, 0)
         .to("[data-rewatch-meetings]", {y:224, opacity: 0, scale:0.5}, 0)
+        .to("[data-rewatch-hero-img-inner]", {y:'-50%'}, 0)
 }
 
 export const onceRewatch = (container) => {
@@ -30,7 +31,7 @@ export const onceRewatch = (container) => {
             tl
                 .from(container, {autoAlpha: 0, duration:2, clearProps: "all"})
                 .from("[data-header]", {y: -32, autoAlpha:0, duration:1, ease: "power4.out"}, 0.25)
-                .from("[data-rewatch-hero-img]", {scale: 0.8, y:96, autoAlpha:0, duration:2, ease: "power4.out"}, 0.25)
+                .from("[data-rewatch-hero-img-outer]", {scale: 0.8, y:96, autoAlpha:0, duration:2, ease: "power4.out"}, 0.25)
                 .from(headline.words, {autoAlpha: 0, y: 36, duration:2, ease: "power4.out", stagger:0.05}, 0.25)
                 .from(subhead.words, {autoAlpha: 0, y: 24, duration:2, ease: "power4.out", stagger:0.02}, 0.5)
                 .from("[data-rewatch-meeting]", {scale: 0.5, y:48, autoAlpha:0, duration:1, ease: "power4.out", stagger:0.1}, 0.75)
@@ -47,7 +48,7 @@ export const enterRewatch = (container) => {
         const tl = gsap.timeline({});
             tl
                 .from(container, {autoAlpha: 0, duration:2, clearProps: "all"})
-                .from("[data-rewatch-hero-img]", {scale: 0.8, y:96, autoAlpha:0, duration:2, ease: "power4.out"}, 0.25)
+                .from("[data-rewatch-hero-img-outer]", {scale: 0.8, y:96, autoAlpha:0, duration:2, ease: "power4.out"}, 0.25)
                 .from(headline.words, {autoAlpha: 0, y: 36, duration:2, ease: "power4.out", stagger:0.05}, 0.25)
                 .from(subhead.words, {autoAlpha: 0, y: 24, duration:2, ease: "power4.out", stagger:0.02}, 0.5)
                 .from("[data-rewatch-meeting]", {scale: 0.5, y:48, autoAlpha:0, duration:1, ease: "power3.out", stagger:0.1}, 0.75)
