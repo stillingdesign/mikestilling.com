@@ -229,7 +229,7 @@ Due to this widespread adoption, <mark>Mike believes many teams are just going t
 
 #### <span class="font:serif italic">Shifting</span> focus
 
-At Rewatch, Mike had spent ~50% of his time creating assets for content marketing lead by the marketing team. Continually, the results of this tactic had been abysmal. For reference, like: 150 impressions per social post announcing them, engagement only coming from internal employees, <10 clicks leading to page views per month, and almost never <span class="space:nowrap">a conversion...</span>
+At Rewatch, Mike had spent ~50% of his time creating assets for content marketing lead by the marketing team. Continually, the results of this tactic had been abysmal. For reference, like: 150 impressions per average social post, engagement only coming from internal employees, <10 clicks leading to page views per month, and almost never <span class="space:nowrap">a conversion...</span>
 
 <div class="relative w:100p max-w:640 my:32 text:center">
     <img
