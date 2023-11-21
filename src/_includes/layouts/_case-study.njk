@@ -63,7 +63,7 @@ changefreq: monthly
                         </div>
                         {% if loop.index <= 1 %}<div class="absolute bottom:n160 left:n320 flex w:640 ratio:2-1 bg:primary-rg" style="border-radius:100%; background: radial-gradient(50% 50% at 50% 50%, rgba(var(--sheet-6-i), 1) 0%, rgba(var(--sheet-6-i), 0) 100%)"></div>{% endif %}
                         {% if loop.index > 1 %}<div class="absolute bottom:n160 right:n320 flex w:640 ratio:2-1 bg:primary-rg" style="border-radius:100%; background: radial-gradient(50% 50% at 50% 50%, rgba(var(--sheet-6-i), 1) 0%, rgba(var(--sheet-6-i), 0) 100%)"></div>{% endif %}
-                        <div class="absolute bottom:0 {% if loop.index > 1 %}right:0 {% else %}left:0{% endif %} flex align-items:center py:4 px:16">
+                        <div class="absolute bottom:0 {% if loop.index > 1 %}right:0 {% else %}left:0{% endif %} flex align-items:center py:4 px:12">
                             {% if loop.index <= 1 %}
                                 {{ icons.chevLeft('w:20 sm:w:24 transform cs-thumb-svg-left') }}
                             {% endif %}

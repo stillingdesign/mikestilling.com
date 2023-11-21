@@ -126,4 +126,10 @@
     .cs-thumb:hover .cs-thumb-svg-right { @include apply("translate-x:4 transition:400 cubic-out"); }
 }
 
+.cs-thumb:focus-visible {
+    outline:none;
+    box-shadow: 0 0 0 6px rgba(var(--primary-rg), 1);
+    .cs-thumb-img { @include apply("transition:500 cubic-out"); transform: scale3d(1.05,1.05,1.05); }
+}
+
 /* purgecss end ignore */
