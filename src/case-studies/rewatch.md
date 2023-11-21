@@ -42,7 +42,7 @@ The challenge was shaping the brand in a way that allowed assets to be designed 
 
 #### Building&nbsp; <span class="font:serif italic">fast</span>
 
-At any given moment, "good" SaaS branding is fairly predictable. Strapped on time and striving for growth, reinventing this wasn't feasible or conducive to the business goals. Instead, Mike opted to borrow bits and pieces of what currently works for "the cool kids" — brands like [Linear](https://linear.app/), [Stripe](https://stripe.com/), and [Vercel](https://vercel.com/).
+At any given moment, "good" SaaS branding is fairly predictable. Strapped on time and striving for growth, reinventing this wasn't feasible or conducive to the business goals. Instead, Mike opted to borrow and build upon bits and pieces of what currently works for industry leading teams targetting <span class="space:nowrap">a similar audience.</span>
 
 Rewatch's CEO is a fantastic product designer. Running with pieces of his previous work toward the brand also helped shape aspects of what it is today. On the marketing side, feedback centered around making the brand more approachable than it's initial state of being dark and developer focused. Outside of that, most of the team's early feedback was like, <span class="space:nowrap">"we like Apple..." 😅</span>
 
