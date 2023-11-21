@@ -5,6 +5,7 @@ import {accordion} from '../interactions/accordion.js';
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 function rewatchScroll() {
+
     const tl = gsap.timeline({
         defaults: { overwrite: true },
         scrollTrigger: {
@@ -20,7 +21,26 @@ function rewatchScroll() {
         .to("[data-rewatch-headline]", {y: 224, opacity: 0}, 0)
         .to("[data-rewatch-gradient]", {opacity: 0}, 0)
         .to("[data-rewatch-meetings]", {y:224, opacity: 0, scale:0.5}, 0)
-        .to("[data-rewatch-hero-img-inner]", {y:'-50%'}, 0)
+
+    const tl2 = gsap.timeline({
+        defaults: { overwrite: true },
+        scrollTrigger: {
+            trigger: `[data-rewatch-hero]`,
+            start: `top top`,
+            end: `bottom top`,
+            scrub: 1,
+            duration: 1
+        }
+    });
+
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 768px)", () => {
+        tl2.to("[data-rewatch-hero-img-inner]", {y:'-55%'}, 0)
+    });
+
+    mm.add("(max-width: 767px)", () => {
+        tl2.to("[data-rewatch-hero-img-inner]", {y:'-45%'}, 0)
+    });
 }
 
 export const onceRewatch = (container) => {
