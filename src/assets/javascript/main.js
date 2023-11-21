@@ -7,6 +7,7 @@ import {onceHome, enterHome, leaveHome} from './transitions/home.js';
 import {onceRewatch, enterRewatch, leaveRewatch} from './transitions/rewatch.js';
 
 barba.hooks.once(() => {
+    document.querySelector("[data-fuoc]").style.display = "none";
     window.addEventListener('load', () => { tabs(); });
 });
 
