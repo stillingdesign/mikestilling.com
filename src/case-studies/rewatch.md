@@ -130,7 +130,7 @@ Since CMS's often promote over-templatization, Mike and the team opted to only r
 
 Moving extremely fast with limited resources will lead to sloppiness. It's inevitable. At some point, there will be work that is not as great as it could be. At Rewatch, Mike tried to minimize this by taking a thoughtful approach <span class="space:nowrap">to visual direction.</span>
 
-Beyond capturing stakeholders feedback and preferences, relying heavily on whitespace, color, and bold typography let Mike work efficiently within his wheelhouse; reducing the amount of time he spent in processes that he's less skilled at, such as vector illustration. This kept asset creation <span class="space:nowrap">fast and</span> the quality of those <span class="space:nowrap">assets stronger.</span>
+Relying on ample whitespace, consistent color, and bold typography allowed Mike to work more efficiently within his wheelhouse, reducing the amount of time he spent in processes that he's less skilled at, such as vector illustration. This kept asset creation fast and the quality of those <span class="space:nowrap">assets stronger.</span>
 
 <figure class="relative w:100p mt:32 sm:mt:36 md:mt:48 mb:64 sm:mb:72 md:mb:96 text:center">
     <img
@@ -175,7 +175,7 @@ It was assumed that enterprise buyers preferred benefits, but Rewatch's benefits
 
 More or less, when using benefits, people had a hard time understanding what the product actually did.
 
-While at first, going between the two was a matter of preference and opinion, <mark>leveraging analytics, Mike uncovered that feature-based messaging was more effective. Pages using concise, feature-based copy converted at a significantly higher rate than those heavily relying <span class="space:nowrap">on benefit-based jargain.</span></mark>
+While at first, going between the two was a matter of preference and opinion, <mark>leveraging analytics, Mike uncovered that feature-based messaging was more effective. Pages using concise, feature-based copy converted at a significantly higher rate than those heavily relying <span class="space:nowrap">on benefit-based jargon.</span></mark>
 
 <figure class="relative w:100p mt:32 sm:mt:48 mb:64 sm:mb:72 text:center">
     <img
