@@ -14,42 +14,17 @@ closing: Oof, that was a lot. <span class="space:nowrap">Thanks for reading!</sp
 gradient: radial-gradient(100% 100% at 50% 0%, rgba(43, 114, 253, 0.2) 0%, rgba(32, 107, 255, 0) 100%)
 ---
 
-## While moving from PLG to SLG and back again, with <span class="space:nowrap">an evolving </span> product, and fluctuating ICP — Mike was responsibile for finding ways to drive revenue through marketing, brand, and web design at Rewatch.
+## While moving from product to sales-led growth strategies and back again, with a fluctuating customer profile, and an ever-changing product — Mike was responsibile for finding ways to drive revenue through marketing, brand, and web design <span class="space:nowrap">at Rewatch.</span>
 
 As the sole designer focused on marketing, this meant Mike <span class="space:nowrap">had to balance</span> efficiency and quality, while prioritizing impact.
 
-<ul class="w:100p max-w:640 md:max-w:none flex flex:col md:flex:row md:gap:28 justify-content:between font:lg md:font:xl border-t:1 border:white border-opacity:20 md:border-t:0 border:dashed my:36 sm:my:48 md:my:64">
-    <li class="w:100p md:max-w:304 py:24 border-b:1 border:white border-opacity:20 md:border-b:0 border:dashed">
-        <h3 class="inline bold">
-            Efficiency.
-        </h3>
-        <p class="inline opacity:70">
-            Maintaining a higher velocity <span class="space:nowrap">of meaningful</span> outputs within a given timeframe than what’s typically <span class="space:nowrap">considered  "normal".</span>
-        </p>
-    </li>
-    <li class="w:100p md:max-w:304 py:24 border-b:1 border:white border-opacity:20 md:border-b:0 border:dashed">
-        <h3 class="inline bold">
-            Quality.
-        </h3>
-        <p class="inline opacity:70">
-            Building outputs that look and perform better than what the competition <span class="space:nowrap">is currently</span> serving — ideally, better <span class="space:nowrap">than the industry.</span>
-        </p>
-    </li>
-    <li class="w:100p md:max-w:304 py:24 border-b:1 border:white border-opacity:20 md:border-b:0 border:dashed">
-        <h3 class="inline bold">
-            Prioritizing impact.
-        </h3>
-        <p class="inline opacity:70">
-            Ensuring time being spent will yield results and greater results than if spent focusing on other projects <span class="space:nowrap">or initiatives.</span>
-        </p>
-    </li>
-</ul>
-
 ### <span class="font:serif italic">on</span> Efficiency
 
-[Rewatch](https://rewatch.com/) generally has around ~20 employees and targets medium to enterprise sized businesses—making it important <span class="space:nowrap">to look</span> more reliable and established than it necessarily was.
+[Rewatch](https://rewatch.com/) generally has around ~20 employees and targets medium to enterprise sized businesses—making it important <span class="space:nowrap">to swing-up</span> and look more reliable <span class="space:nowrap">and established.</span>
 
-Mike's technical background and familiarity with just about every design tool, made it possible to build a lot of stuff, fast so that the team looked larger. The challenge was designing a brand that allowed assets to be designed quickly, while still looking great, and being flexible enough to change with the business.
+Mike's technical background and familiarity with just about every design tool, made it possible to build a lot, fast, so that Rewatch could look as such and compete with <span class="space:nowrap">larger competitors.</span>
+
+The challenge was shaping the brand in a way that allowed assets to be designed quickly, while still looking great, and being flexible enough to change with <span class="space:nowrap">the business.</span>
 
 <figure class="relative w:100p my:64 sm:my:72 md:my:96 text:center">
     <img
