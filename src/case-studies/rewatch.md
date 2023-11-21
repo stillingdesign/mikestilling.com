@@ -11,6 +11,7 @@ role: "Sr. Web Designer"
 headline: Meet less. <span class="space:nowrap">Build more.</span>
 subhead: Rewatch saves, summarizes, and shares your company's <span class="sm:space:nowrap">meetings and</span> screen recordings <span class="space:nowrap">in a collaborative format.</span>
 closing: Oof, that was a lot. <span class="space:nowrap">Thanks for reading!</span>
+snippet: Designing and building <span class="space:nowrap">everything marketing related.</span>
 gradient: radial-gradient(100% 100% at 50% 0%, rgba(43, 114, 253, 0.2) 0%, rgba(32, 107, 255, 0) 100%)
 ---
 
