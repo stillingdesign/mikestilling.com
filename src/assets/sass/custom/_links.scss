@@ -115,4 +115,15 @@
     .case-study-link:hover > div > svg { @include apply("translate-x:8 transition:300 delay:50 cubic-out"); }
 }
 
+// One-offs
+.cs-thumb .cs-thumb-img,
+.cs-thumb .cs-thumb-svg-left,
+.cs-thumb .cs-thumb-svg-right { @include apply("transition:400 cubic-out"); }
+
+@media (hover: hover) {
+    .cs-thumb:hover .cs-thumb-img { @include apply("transition:500 cubic-out"); transform: scale3d(1.05,1.05,1.05); }
+    .cs-thumb:hover .cs-thumb-svg-left  { @include apply("translate-x:n4 transition:400 cubic-out"); }
+    .cs-thumb:hover .cs-thumb-svg-right { @include apply("translate-x:4 transition:400 cubic-out"); }
+}
+
 /* purgecss end ignore */
