@@ -191,7 +191,7 @@ While at first, going between the two was a matter of preference and opinion, <m
     </figcaption>
 </figure>
 
-Though, benefits still had a time and place. <mark>Working in unison with Darcy, the demand-gen manager, they found benefit-based headlines that were relatable performed better on social channels as a means to capture <span class="space:nowrap">initial interest.</span></mark>
+Although, benefits still had a time and place. <mark>Working in unison with Darcy, the demand-gen manager, they found benefit-based headlines that were relatable performed better on social channels as a means to capture <span class="space:nowrap">initial interest.</span></mark>
 
 <figure class="relative w:100p mt:32 sm:mt:48 mb:64 sm:mb:72 text:center">
     <div class="flex flex:col sm:flex:row gap:24 sm:gap:48">
