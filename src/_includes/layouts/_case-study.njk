@@ -13,6 +13,7 @@ changefreq: monthly
         <section data-rewatch-hero class="section overflow:hidden">
             <div data-rewatch-gradient class="absolute top:0 left:0 w:100p h:100p" style="background: {{ gradient }};"></div>
             <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
+                {# Headline #}
                 <div class="relative flex flex:col align-items:center text:center transform">
                     <h1 data-rewatch-headline class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
                         Meet less. <span class="space:nowrap">Build more.</span>
@@ -21,10 +22,11 @@ changefreq: monthly
                         <span class="space:nowrap">Rewatch saves, summarizes, and shares</span> <span class="space:nowrap md:space:normal">your company's meetings and screen</span> <span class="space:nowrap">recordings in a collaborative format.</span>
                     </p>
                 </div>
+                {# Graphics #}
                 <div class="relative w:100p">
-                    <div data-rewatch-meetings class="relative w:100p hidden md:block transform transform:center-bottom">
+                    <div data-rewatch-meetings aria-hidden="true" class="relative w:100p hidden md:block transform transform:center-bottom">
                         {% macro meeting(classes, head, desc) %}
-                            <div data-rewatch-meeting aria-hidden="true" class="absolute pl:16 pr:12 py:8 min-w:160 bg:primary-rg bg-opacity:10 border:1 border-opacity:30 border:primary-rg radius:md shadow:lg overflow:hidden transform {{ classes }}">
+                            <div data-rewatch-meeting class="absolute pl:16 pr:12 py:8 min-w:160 bg:primary-rg bg-opacity:10 border:1 border-opacity:30 border:primary-rg radius:md shadow:lg overflow:hidden transform {{ classes }}">
                                 <div class="absolute top:0 left:0 w:4 h:100p bg:primary-rg bg-opacity:30"></div>
                                 <div class="font:sm line-through">
                                     {{ head | safe }}
@@ -65,7 +67,24 @@ changefreq: monthly
                             desc='11:30 - 12:00PM'
                         )}}
                     </div>
-                    <div data-rewatch-hero-img class="relative z:2 flex ratio:16-9 bg:sheet-4-i ml:n24 sm:ml:0 w:plus48 sm:w:100p shadow:xl"></div>
+                    {# UI #}
+                    <div data-rewatch-hero-img class="relative z:2 flex ratio:16-9 bg:sheet-1 w:100p shadow:xl radius:md sm:radius:lg overflow:hidden">
+                        {# Browser #}
+                        <div class="absolute top:0 left:0 w:100p h:32 sm:h:48 flex align-items:center justify-content:between px:8 sm:px:16 border-b:1 border:black border-opacity:4 color:ink-1" style="background-color:#ECECEE;">
+                            <div class="flex gap:8 w:32 sm:w:72">
+                                <div class="w:8 h:8 sm:w:12 sm:h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#ED6A5E;"></div>
+                                <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#F5BE4F;"></div>
+                                <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#61C554;"></div>
+                            </div>
+                            <div class="w:100p h:20 sm:h:28 max-w:576 radius:sm text:center font:xs sm:font:sm leading:100 flex align-items:center justify-content:center border:1 border:black border-opacity:4" style="background-color:#DFDFE1;">
+                                rewatch.com
+                            </div>
+                            <div class="flex gap:8 justify-content:end align-items:center w:32 sm:w:72">
+                                {{ icons.macTabs('hidden sm:block w:24 opacity:50')}}
+                                {{ icons.macPlus('w:20 sm:w:24 opacity:50')}}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
