@@ -4,6 +4,7 @@ import barba from "@barba/core";
 import {tabs} from './interactions/tabs.js';
 import {enterDefault, leaveDefault} from './transitions/default.js';
 import {onceHome, enterHome, leaveHome} from './transitions/home.js';
+import {onceRewatch, enterRewatch, leaveRewatch} from './transitions/rewatch.js';
 
 barba.hooks.once(() => {
     window.addEventListener('load', () => { tabs(); });
@@ -35,6 +36,17 @@ barba.init({
             leave: ({current}) => leaveHome(current.container),
             enter({next}) {
                 enterHome(next.container)
+            }
+        },
+        {
+            name: 'rewatch',
+            to: { namespace: ['rewatch'] },
+            once({next}) {
+                onceRewatch(next.container)
+            },
+            leave: ({current}) => leaveRewatch(current.container),
+            enter({next}) {
+                enterRewatch(next.container)
             }
         }
     ]

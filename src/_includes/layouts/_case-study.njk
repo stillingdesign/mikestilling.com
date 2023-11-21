@@ -1,7 +1,6 @@
 ---
 layout: "main.njk"
 tags: casestudy
-barba: experience
 theme: dark
 changefreq: monthly
 ---
@@ -10,19 +9,81 @@ changefreq: monthly
 <main>
 
     {# Hero #}
-    <section class="section"  style="background: {{ gradient }};">
-        <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48 sm:gap:64 md:gap:96">
-            <div class="flex flex:col align-items:center text:center">
-                <h1 class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
-                    {{ headline | safe }}
-                </h1>
-                <p class="font:5vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 max-w:768 md:mb:16">
-                    {{ subhead | safe }}
-                </p>
+    {% if title == 'Rewatch' %}
+        <section data-rewatch-hero class="section overflow:hidden">
+            <div data-rewatch-gradient class="absolute top:0 left:0 w:100p h:100p" style="background: {{ gradient }};"></div>
+            <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
+                <div class="relative flex flex:col align-items:center text:center transform">
+                    <h1 data-rewatch-headline class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                        Meet less. <span class="space:nowrap">Build more.</span>
+                    </h1>
+                    <p data-rewatch-subhead class="font:5vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 md:max-w:8-12 lg:max-w:768 md:mb:16">
+                        <span class="space:nowrap">Rewatch saves, summarizes, and shares</span> <span class="space:nowrap md:space:normal">your company's meetings and screen</span> <span class="space:nowrap">recordings in a collaborative format.</span>
+                    </p>
+                </div>
+                <div class="relative w:100p">
+                    <div data-rewatch-meetings class="relative w:100p hidden md:block transform transform:center-bottom">
+                        {% macro meeting(classes, head, desc) %}
+                            <div data-rewatch-meeting aria-hidden="true" class="absolute pl:16 pr:12 py:8 min-w:160 bg:primary-rg bg-opacity:10 border:1 border-opacity:30 border:primary-rg radius:md shadow:lg overflow:hidden transform {{ classes }}">
+                                <div class="absolute top:0 left:0 w:4 h:100p bg:primary-rg bg-opacity:30"></div>
+                                <div class="font:sm line-through">
+                                    {{ head | safe }}
+                                </div>
+                                <div class="font:xs opacity:70 mb:n2">
+                                    {{ desc | safe }}
+                                </div>
+                            </div>
+                        {% endmacro %}
+                        {{ meeting(
+                            classes='top:n112 lg:top:n128 left:n24 lg:left:n48 rotate:n12',
+                            head='Project sync',
+                            desc='9:00 - 9:30AM'
+                        )}}
+                        {{ meeting(
+                            classes='top:n80 right:n48 rotate:8',
+                            head='GTM standup',
+                            desc='9:30 - 10:00AM'
+                        )}}
+                        {{ meeting(
+                            classes='top:n288 left:n72 lg:left:n192 rotate:6 ml:12',
+                            head='Mike / Sarah',
+                            desc='10:00 - 10:30AM'
+                        )}}
+                        {{ meeting(
+                            classes='top:n288 lg:top:n320 right:n32 lg:right:n192 rotate:n8 mr:12',
+                            head='Design review',
+                            desc='10:30 - 11:00AM'
+                        )}}
+                        {{ meeting(
+                            classes='top:96 left:n128 rotate:8',
+                            head='Marketing sync',
+                            desc='11:00 - 11:30AM'
+                        )}}
+                        {{ meeting(
+                            classes='top:128 right:n160 rotate:n12 mr:8',
+                            head='Sprint planning',
+                            desc='11:30 - 12:00PM'
+                        )}}
+                    </div>
+                    <div data-rewatch-hero-img class="relative z:2 flex ratio:16-9 bg:sheet-4-i ml:n24 sm:ml:0 w:plus48 sm:w:100p shadow:xl"></div>
+                </div>
             </div>
-            <div class="flex ratio:16-9 bg:sheet-4-i ml:n24 sm:ml:0 w:plus48 sm:w:100p"></div>
-        </div>
-    </section>
+        </section>
+    {% else %}
+        <section class="section"  style="background: {{ gradient }};">
+            <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
+                <div class="flex flex:col align-items:center text:center">
+                    <h1 class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                        {{ headline | safe }}
+                    </h1>
+                    <p class="font:5vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 max-w:768 md:mb:16">
+                        {{ subhead | safe }}
+                    </p>
+                </div>
+                <div class="flex ratio:16-9 bg:sheet-4-i ml:n24 sm:ml:0 w:plus48 sm:w:100p"></div>
+            </div>
+        </section>
+    {% endif %}
 
     {# Content #}
     <section class="section pb:32">

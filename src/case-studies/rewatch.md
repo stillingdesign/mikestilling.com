@@ -13,6 +13,7 @@ subhead: Rewatch saves, summarizes, and shares your company's <span class="sm:sp
 closing: Oof, that was a lot. <span class="space:nowrap">Thanks for reading!</span>
 snippet: Designing and building <span class="space:nowrap">everything marketing related.</span>
 gradient: radial-gradient(100% 100% at 50% 0%, rgba(43, 114, 253, 0.2) 0%, rgba(32, 107, 255, 0) 100%)
+barba: rewatch
 ---
 
 ## While moving from product to sales-led growth strategies and back again, with a fluctuating customer profile, and an ever-changing product — Mike was responsibile for finding ways to drive revenue through marketing, brand, and web design <span class="space:nowrap">at Rewatch.</span>
