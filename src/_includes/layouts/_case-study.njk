@@ -117,8 +117,8 @@ changefreq: monthly
                 {# Graphics #}
                 <div class="relative w:100p">
                     {# Decoration #}
-                    {% macro gridCell(bl, bb, bt) %}<div class="w:72 h:72 border:white border-opacity:8 {% if bl %}border-l:1{% endif %} {% if bb %}border-b:1{% endif %} {% if bt %}border-t:1{% endif %}"></div>{% endmacro %}
-                    <div data-fh-grids class="w:100p relative">
+                    {% macro gridCell(bl, bb, bt) %}<div class="w:72 h:72 border:white border-opacity:15 {% if bl %}border-l:1{% endif %} {% if bb %}border-b:1{% endif %} {% if bt %}border-t:1{% endif %}"></div>{% endmacro %}
+                    <div data-fh-grids class="hidden sm:block w:100p relative">
                         <div data-fh-grid class="absolute top:n192 left:n320 flex flex:col" style="mask-image: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%); -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);">
                             <div class="flex">
                                 {{ gridCell(bb=true) }}
