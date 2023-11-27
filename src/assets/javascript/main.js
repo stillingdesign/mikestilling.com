@@ -5,6 +5,7 @@ import {tabs} from './interactions/tabs.js';
 import {enterDefault, leaveDefault} from './transitions/default.js';
 import {onceHome, enterHome, leaveHome} from './transitions/home.js';
 import {onceRewatch, enterRewatch, leaveRewatch} from './transitions/rewatch.js';
+import {onceFirehydrant, enterFirehydrant, leaveFirehydrant} from './transitions/firehydrant.js';
 
 barba.hooks.once(() => {
     document.querySelector("[data-fuoc]").style.display = "none";
@@ -48,6 +49,17 @@ barba.init({
             leave: ({current}) => leaveRewatch(current.container),
             enter({next}) {
                 enterRewatch(next.container)
+            }
+        },
+        {
+            name: 'firehydrant',
+            to: { namespace: ['firehydrant'] },
+            once({next}) {
+                onceFirehydrant(next.container)
+            },
+            leave: ({current}) => leaveFirehydrant(current.container),
+            enter({next}) {
+                enterFirehydrant(next.container)
             }
         }
     ]

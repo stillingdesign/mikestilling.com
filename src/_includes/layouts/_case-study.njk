@@ -101,6 +101,197 @@ changefreq: monthly
                 </div>
             </div>
         </section>
+    {% elif title == 'FireHydrant' %}
+        <section data-fh-hero class="section overflow:hidden">
+            <div data-fh-gradient class="absolute top:0 left:0 w:100p h:100p" style="background: {{ gradient }};"></div>
+            <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
+                {# Headline #}
+                <div data-hero-text class="relative flex flex:col align-items:center text:center transform">
+                    <h1 data-fh-headline class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                        Incident Management
+                    </h1>
+                    <p data-fh-subhead class="font:5vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 md:max-w:67p lg:max-w:768 md:mb:16">
+                        FireHydrant helps engineering teams automate, respond to, learn from, and improve upon <span class="space:nowrap">their incidents.</span>
+                    </p>
+                </div>
+                {# Graphics #}
+                <div class="relative w:100p">
+                    {# Decoration #}
+                    {% macro gridCell(bl, bb, bt) %}<div class="w:72 h:72 border:white border-opacity:8 {% if bl %}border-l:1{% endif %} {% if bb %}border-b:1{% endif %} {% if bt %}border-t:1{% endif %}"></div>{% endmacro %}
+                    <div data-fh-grids class="w:100p relative">
+                        <div data-fh-grid class="absolute top:n192 left:n320 flex flex:col" style="mask-image: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%); -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);">
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell() }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                            </div>
+                        </div>
+                        <div data-fh-grid class="absolute top:n192 right:n320 flex flex:col" style="mask-image: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%); -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%);">
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell(bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                                {{ gridCell(bl=true, bb=true) }}
+                            </div>
+                            <div class="flex">
+                                {{ gridCell() }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                                {{ gridCell(bl=true) }}
+                            </div>
+                        </div>
+                    </div>
+                    {# UI #}
+                    <div data-fh-hero-img-outer class="relative z:2 flex flex:col ratio:4-3 sm:ratio:16-9 w:100p shadow:xl radius:md sm:radius:lg overflow:hidden">
+                        {# Browser #}
+                        <div class="relative flex-shrink:0 z:2 w:100p h:32 sm:h:48 flex align-items:center justify-content:between px:8 sm:px:16 border-b:1 border:white border-opacity:6 color:ink-1 bg:sheet-3-i">
+                            <div class="flex gap:8 w:32 sm:w:72">
+                                <div class="w:8 h:8 sm:w:12 sm:h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#ED6A5E;"></div>
+                                <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#F5BE4F;"></div>
+                                <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#61C554;"></div>
+                            </div>
+                            <div class="w:100p h:20 sm:h:28 max-w:576 radius:sm text:center font:xs color:ink-1-i sm:font:sm leading:100 flex align-items:center justify-content:center border:1 border:white border-opacity:6 bg:sheet-2-i">
+                                firehydrant.com
+                            </div>
+                            <div class="flex gap:8 justify-content:end align-items:center w:32 sm:w:72 color:ink-2-i">
+                                {{ icons.macTabs('hidden sm:block w:24 opacity:50')}}
+                                {{ icons.macPlus('w:20 sm:w:24 opacity:50')}}
+                            </div>
+                        </div>
+                        <img
+                            data-fh-hero-img-inner
+                            src="/assets/images/graphics/firehydrant-page-hero.webp"
+                            alt="FireHydrant marketing website design"
+                            width="1200" height="625"
+                            class="relative w:100p h:auto max-w:none z:1"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     {% else %}
         <section class="section"  style="background: {{ gradient }};">
             <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
