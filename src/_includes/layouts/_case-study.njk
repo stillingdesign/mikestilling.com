@@ -292,6 +292,94 @@ changefreq: monthly
                 </div>
             </div>
         </section>
+    {% elif title == 'Abstract' %}
+        <section data-abstract-hero class="section overflow:hidden">
+            <div data-abstract-gradient class="absolute top:0 left:0 w:100p h:100p" style="background: {{ gradient }};"></div>
+            <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
+                {# Headline #}
+                <div data-abstract-text class="relative flex flex:col align-items:center text:center transform">
+                    <h1 data-abstract-headline class="font:serif font:16vw sm:font:12xl md:font:8vw lg:font:12xl leading:110 mb:12 md:mb:0 tracking:tight">
+                        Introducing Notebooks
+                    </h1>
+                    <p data-abstract-subhead class="font:5vw sm:font:4xl md:font:2-5vw lg:font:4xl opacity:70 leading:130 md:max-w:67p lg:max-w:768 md:mb:16">
+                        After Figma arrived, Abstract pivoted from their initial git-for-Sketch tool to a Notion-like product for designers.
+                    </p>
+                </div>
+                {# Graphics #}
+                <div class="relative w:100p">
+                    {# Decoration #}
+                    <div data-abstract-decor class="hidden md:block w:100p relative">
+                        <img
+                            data-abstract-decoration
+                            src="/assets/images/graphics/abstract-cherry.svg"
+                            alt=""
+                            width="180" height="180"
+                            class="absolute top:n256 left:n64 w:128 h:auto transform rotate:n12"
+                        />
+                        <img
+                            data-abstract-decoration
+                            src="/assets/images/graphics/abstract-pencil.svg"
+                            alt=""
+                            width="180" height="180"
+                            class="absolute top:n224 right:n32 w:128 h:auto transform rotate:n12"
+                        />
+                        <img
+                            data-abstract-decoration
+                            src="/assets/images/graphics/abstract-paperclip.svg"
+                            alt=""
+                            width="180" height="180"
+                            class="absolute top:n112 left:n144 w:128 h:auto transform rotate:n45"
+                        />
+                        <img
+                            data-abstract-decoration
+                            src="/assets/images/graphics/abstract-text.svg"
+                            alt=""
+                            width="180" height="180"
+                            class="absolute top:n112 right:n144 w:128 h:auto transform rotate:45"
+                        />
+                        <img
+                            data-abstract-decoration
+                            src="/assets/images/graphics/abstract-key.svg"
+                            alt=""
+                            width="180" height="180"
+                            class="absolute top:48 left:n160 w:144 h:auto transform rotate:n45"
+                        />
+                        <img
+                            data-abstract-decoration
+                            src="/assets/images/graphics/abstract-folders.svg"
+                            alt=""
+                            width="180" height="180"
+                            class="absolute top:48 right:n160 w:144 h:auto transform rotate:n12"
+                        />
+                    </div>
+                    {# UI #}
+                    <div data-abstract-hero-img-outer class="relative z:2 flex flex:col w:100p shadow:xl radius:md sm:radius:lg overflow:hidden border:1 border:white border-opacity:10">
+                        {# Browser #}
+                        <div class="relative flex-shrink:0 z:2 w:100p h:32 sm:h:48 flex align-items:center justify-content:between px:8 sm:px:16 border-b:1 border:white border-opacity:6 color:ink-1 bg:sheet-3-i">
+                            <div class="flex gap:8 w:32 sm:w:72">
+                                <div class="w:8 h:8 sm:w:12 sm:h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#ED6A5E;"></div>
+                                <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#F5BE4F;"></div>
+                                <div class="hidden sm:block w:12 h:12 radius:full border:1 border:black border-opacity:10" style="background-color:#61C554;"></div>
+                            </div>
+                            <div class="w:100p h:20 sm:h:28 max-w:576 radius:sm text:center font:xs color:ink-1-i sm:font:sm leading:100 flex align-items:center justify-content:center border:1 border:white border-opacity:6 bg:sheet-2-i">
+                                abstract.com
+                            </div>
+                            <div class="flex gap:8 justify-content:end align-items:center w:32 sm:w:72 color:ink-2-i">
+                                {{ icons.macTabs('hidden sm:block w:24 opacity:50')}}
+                                {{ icons.macPlus('w:20 sm:w:24 opacity:50')}}
+                            </div>
+                        </div>
+                        <img
+                            data-abstract-hero-img-inner
+                            src="/assets/images/graphics/abstract-page-hero.webp"
+                            alt="FireHydrant marketing website design"
+                            width="1152" height="768"
+                            class="relative w:100p h:auto max-w:none"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
     {% else %}
         <section class="section"  style="background: {{ gradient }};">
             <div class="container pt:112 sm:pt:144 md:pt:192 pb:40 sm:pb:80 md:pb:96 flex flex:col align-items:center gap:48">
