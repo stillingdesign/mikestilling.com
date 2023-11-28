@@ -15,7 +15,7 @@ changefreq: daily
 <main>
     
     {# Hero #}
-    <section class="section">
+    <section data-home-hero class="section">
         <div class="container pt:112 sm:pt:144 md:pt:192 pb:48 sm:pb:80 md:pb:96 flex flex:col gap:48 sm:gap:64 md:gap:96">
             {# Content #}
             <div class="relative flex flex:col md:flex:row align-items:center md:align-items:end md:justify-content:between text:center md:text:left">
@@ -29,8 +29,15 @@ changefreq: daily
             {# Graphics #}
             <div class="relative w:100p flex flex:col md:flex:row-reverse justify-content:between">
                 {# Image #}
-                <div class="relative flex w:100p md:w:10-12 ratio:1-1 sm:ratio:16-9 bg:sheet-4-i mb:16 md:mb:0">
-                    <div data-reveal class="absolute top:0 left:0 w:100p h:100p transform transform:top bg:sheet-6-i"></div>
+                <div class="relative z:2 flex align-items:center justify-content:center w:100p md:w:10-12 ratio:1-1 sm:ratio:16-9 bg:sheet-4-i mb:16 md:mb:0 overflow:hidden">
+                    <img
+                        data-home-hero-img
+                        src="/assets/images/graphics/home-hero.webp"
+                        alt="Mike, Kerry, and the dogs"
+                        width="1920" height="1920"
+                        class="absolute top:0 w:100p h:auto max-w:none"
+                    />
+                    <div data-reveal class="absolute top:n2 left:n2 w:plus4 h:plus4 transform transform:top bg:sheet-6-i"></div>
                 </div>
                 {# Caption #}
                 <div class"relative">
@@ -38,9 +45,9 @@ changefreq: daily
                     <div class="flex gap:8 md:block leading:140 opacity:70 font:xs sm:font:sm justify-content:center sm:justify-content:start">
                         <p data-caption>Mike and family</p>
                         <span class="md:hidden">·</span>
-                        <p data-caption>Black River Falls, WI</p>
+                        <p data-caption>On the road, WI</p>
                         <span class="md:hidden">·</span>
-                        <p data-caption class="italic">Aug. 2023</p>
+                        <p data-caption class="italic">Sometime 2021</p>
                     </div>
                 </divn>
             </div>
@@ -51,17 +58,17 @@ changefreq: daily
     <section class="section">
         <div class="container flex flex:col align-items:center sm:gap:80">
             {# Headline #}
-            <h2 class="w:plus16 sm:w:100p sm:max-w:640 md:max-w:none md:w:8-12 font:5-5vw sm:font:6xl md:font:3-75vw lg:font:7xl sm:tracking:tight pb:24 sm:pb:0 border-b:1 border:white border-opacity:10 sm:border-b:0 border:dashed">
+            <h2 data-intro class="w:plus16 sm:w:100p sm:max-w:640 md:max-w:none md:w:8-12 font:5-5vw sm:font:6xl md:font:3-75vw lg:font:7xl sm:tracking:tight pb:24 sm:pb:0 border-b:1 border:white border-opacity:10 sm:border-b:0 border:dashed">
                 Mike has been designing, developing, and directing digital brands across an array of industries for over eight years.
             </h2>
             {# List #}
             <ul class="w:100p flex flex:col sm:flex:row sm:gap:28 justify-content:between font:5-5vw sm:font:md md:font:xl">
                 {% macro overviewItem(head, desc) %}
                     <li class="w:100p sm:max-w:256 md:max-w:304 py:24 border-b:1 border:white border-opacity:10 sm:border-b:0 border:dashed">
-                        <h3 class="inline bold">
+                        <h3 data-intro class="inline bold">
                             {{ head | safe }}
                         </h3>
-                        <p class="inline opacity:70">
+                        <p data-intro class="inline opacity:70">
                             {{ desc | safe }}
                         </p>
                     </li>
