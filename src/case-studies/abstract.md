@@ -45,6 +45,12 @@ Mike hadn't heard of [Adam Ho](https://www.adamho.com/), one of folks who design
 
 If he did, maybe it would have been a little more intimidating. Instead, he was just excited about the seemingly insane company benefits, bump in pay, and to <span class="space:nowrap">dive on in.</span>
 
+<div class="block w:100p max-w:320 py:6 px:12 bg:primary-rg bg-opacity:10 border:1 border:primary-rg border-opacity:30 radius:md mt:24 font:md sm:space:nowrap text:center leading:200">
+    <span class="opacity:70">
+        Isometric illustrations by <a href="https://joannalawniczak.com/" target="_blank" rel="noopener noreferrer" class="link link-rg-i">Joanna Ławniczak</a>
+    </span>
+</div>
+
 <figure class="relative w:100p mt:32 mb:64 sm:mb:72 md:mb:96 text:center">
     <img
         src="/assets/images/graphics/abstract-webflow.webp"
@@ -132,9 +138,58 @@ Since the brand team became tiny, it was adopted by the product team. This helpe
 
 ### The <span class="font:serif italic">work</span>
 
-Above are images of the content hub and signup flow Mike worked on. Aside from that, and some blog graphics, he helped design and build a bunch of pages on the marketing site.
+Above are images of the content hub and signup flow Mike worked on. Aside from that, and some blog graphics, he helped design and build a bunch of pages on the <span class="space:nowrap">marketing site.</span>
 
 #### Use case pages
 
-(WIP) Still writing this...
+With the launch of a new product came the need to explain what it was and who it was for. In response, the team opted to create a few new use case pages that walked through the different steps of a design process that Notebooks <span class="space:nowrap">helped with.</span>
 
+<figure class="relative w:100p mt:32 mb:64 sm:mb:72 md:mb:96 text:center">
+    <img
+        src="/assets/images/graphics/abstract-usecase.webp"
+        alt="Abstract use case page design"
+        width="2304" height="1536"
+        class="relative w:100p h:auto max-w:none z:1 radius:md sm:radius:lg"
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mt:24 mb:n32">
+        Some shots of the use case pages Mike designed/built
+    </figcaption>
+</figure>
+
+####  Home V24 R7 Final Final
+
+Mike iterated on the homepage a handful of times. Driving conversion while also balancing two, completely different products in one place was <span class="space:nowrap">a little tricky.</span>
+
+<figure class="relative w:100p mt:32 mb:48 text:center">
+    <img
+        src="/assets/images/graphics/abstract-figma.webp"
+        alt="Designing part of the homepage in Figma"
+        width="2304" height="1636"
+        class="relative w:100p h:auto max-w:none z:1 radius:md sm:radius:lg"
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mt:24 mb:n32">
+        Working through some design on the homepage
+    </figcaption>
+</figure>
+
+<figure class="relative w:100p max-w:640 mt:32 mb:64 sm:mb:72 md:mb:96 text:center">
+    <img
+        src="/assets/images/graphics/abstract-home-v2.webp"
+        alt="Another hero section approach for Abstract's homepage"
+        width="800" height="466"
+        class="relative w:100p h:auto max-w:none z:1 radius:md sm:radius:lg border:1 border:white border-opacity:10"
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mt:24 mb:n32">
+        Another hero section approach for Abstract's homepage
+    </figcaption>
+</figure>
+
+#### Acknowledgement
+
+Abstract's homepage and use cases along with In the Margin that Mike designed/built were featured in Webflow marketing assets a few <span class="space:nowrap">different times.</span>
