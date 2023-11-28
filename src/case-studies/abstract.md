@@ -114,7 +114,7 @@ In part, the strong visual craft was facilitated by an equally impressive team o
 
 Mike was a sponge trying to take it all in and put it right back out. Turnover left just Mike and one other person on the brand team – giving Mike the opportunity to work with and learn from lots of folks across <span class="space:nowrap">the company.</span>
 
-Since the brand team became tiny, it was adopted by the product team. This helped keep product and marketing in sync. It also gave the brand team the chance to work on different pieces <span class="space:nowrap">of the product.</span>
+Since the brand team became tiny, it was adopted by the product team. This helped keep product and marketing in sync. It also gave the brand team a chance to work on different pieces <span class="space:nowrap">of the product.</span>
 
 <figure class="relative w:100p max-w:640 mt:32 mb:64 sm:mb:72 md:mb:96 text:center">
     <img
