@@ -190,6 +190,10 @@ Mike iterated on the homepage a handful of times. Driving conversion while also 
     </figcaption>
 </figure>
 
+#### Marketing Ops
+
+While at Abstract, Mike wore a few different hats – also lending <span class="space:nowrap">a helping</span> hand in analytic implementation/analysis, email automation, and collecting/sending data all over the place. Since the site was built in Webflow, most of this was done through <span class="space:nowrap">no-code automations.</span>
+
 #### Acknowledgement
 
 Abstract's homepage and use cases along with In the Margin that Mike designed/built were featured in Webflow marketing assets a few <span class="space:nowrap">different times.</span>
