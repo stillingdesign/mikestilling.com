@@ -20,7 +20,7 @@
                     <ul class="relative z:1 flex align-items:center">
                         {% macro experience(link, icon, head) %}
                         <li>
-                            <a data-tab href="/case-studies/{{link}}/" class="flex align-items:center gap:4 ml:n1 pl:8 pr:10 h:28 radius:full bg-opacity:10 border:1 border-opacity:30 focus-visible">
+                            <a data-tab href="/case-studies/{{link}}/" class="flex align-items:center gap:4 ml:n1 pl:8 pr:10 h:28 radius:full bg-opacity:10 border:1 border-opacity:30 focus-visible plausible-event-name=Header+Click+{{ head }}">
                                 <div class="hidden sm:block">{{ icon }}</div>
                                 {{ head }}
                             </a>
