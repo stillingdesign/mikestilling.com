@@ -21,6 +21,27 @@ function homeScroll() {
     });
 }
 
+function casestudyHover() {
+    const container = document.querySelector("[data-casestudy-links]");
+    const links = document.querySelectorAll("[data-casestudy-link]");
+    links.forEach(link => {
+        const cursor = link.querySelector("[data-follow]");
+        const cursorFollow = (event) => {
+            let mouseX = event.clientX - link.getBoundingClientRect().left;
+            let mouseY = event.clientY - link.getBoundingClientRect().top;
+            gsap.to(cursor, { duration: 0.2, opacity: 1, x: mouseX, y: mouseY });
+        };
+        container.addEventListener("mouseenter", () => {
+            document.addEventListener("mousemove", cursorFollow);
+        });
+        
+        container.addEventListener("mouseleave", () => {
+            gsap.to(cursor, { duration: 0.2, opacity: 0 });
+            document.removeEventListener("mousemove", cursorFollow);
+        });
+    });
+}
+
 
 export const onceHome = (container) => {
     function enter() {
@@ -38,6 +59,7 @@ export const onceHome = (container) => {
                 .from("[data-caption]", {y: 8, autoAlpha:0, duration:1, ease: "power4.out", stagger:0.1}, 1)
                 .call(() => { headline.revert(); subhead.revert(); });
         homeScroll();
+        casestudyHover();
         accordion();
     }
     return enter();
@@ -58,6 +80,7 @@ export const enterHome = (container) => {
                 .from("[data-caption]", {y: 8, autoAlpha:0, duration:1, ease: "power4.out", stagger:0.1}, 1)
                 .call(() => { headline.revert(); subhead.revert(); });
         homeScroll();
+        casestudyHover();
         accordion();
     }
     return enter();
