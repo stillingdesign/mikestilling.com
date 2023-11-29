@@ -50,7 +50,7 @@ Rewatch's CEO is a fantastic product designer. Running with pieces of his previo
 
 <mark>Mike reached for what was quickly achievable and balanced between the different stakeholders: clean typography and lots of white space. By removing the "dark mode" first approach to the brand, everything felt a bit friendlier and easier to digest.</mark>
 
-For the final touches, Mike looked toward the product for direction. Thankfully, Rewatch's product design team is top notch. To increase uniformity, Mike pulled the primary color, grayscale, button stylings, and font-family from the product.
+For the final touches, Mike looked toward the product for direction. Thankfully, Rewatch's product design team is top notch. To increase uniformity, the primary color, grayscale, button stylings, and font-family were pulled from <span class="space:nowrap">the product.</span>
 
 <figure class="relative w:100p mt:32 sm:mt:48 mb:64 sm:mb:56 text:center">
     <img
