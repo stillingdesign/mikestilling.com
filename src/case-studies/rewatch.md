@@ -175,7 +175,7 @@ At Rewatch, messaging has bounced between benefit and feature-based approaches. 
 
 It was assumed that enterprise buyers preferred benefits, but Rewatch's benefits provide limited insight into functionality —resulting in grandiose promises from an unfamiliar company with little explanation of how those promises would <span class="space:nowrap">be fulfilled.</span>
 
-More or less, when using benefits, people had a hard time understanding what the product actually did.
+More or less, when only using benefits, people had a hard time understanding what the product actually did.
 
 While at first, going between the two was a matter of preference and opinion, <mark>leveraging analytics, Mike uncovered that feature-based messaging was more effective. Pages using concise, feature-based copy converted at a significantly higher rate than those heavily relying <span class="space:nowrap">on benefit-based jargon.</span></mark>
 
