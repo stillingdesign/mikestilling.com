@@ -115,6 +115,9 @@
     .case-study-link:hover > div > svg { @include apply("translate-x:8 transition:300 delay:50 cubic-out"); }
 }
 
+.case-study-link:focus-visible .fade-out { opacity:0; transition:opacity 300ms linear 50ms;}
+.case-study-link:focus-visible > div > svg { @include apply("translate-x:8 transition:300 delay:50 cubic-out"); }
+
 // One-offs
 .cs-thumb .cs-thumb-img,
 .cs-thumb .cs-thumb-svg-left,

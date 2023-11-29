@@ -49,7 +49,6 @@ export const tabs = function (){
         }
 
         if(matchingLink) {
-            console.log(`link matched`)
             const defaultOpacity = 0.7;
             const defaultLeft = `${matchingLink.offsetLeft + 4}px`;
             const defaultWidth = `${matchingLink.offsetWidth}px`;
@@ -58,7 +57,6 @@ export const tabs = function (){
             identifier.style.width = defaultWidth;
             tabsEventsMatched(defaultOpacity, defaultLeft, defaultWidth);
         } else {
-            console.log(`no match`)
             const defaultOpacity = 0;
             identifier.style.opacity = defaultOpacity;
             tabsEvents(defaultOpacity);
