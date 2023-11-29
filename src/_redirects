@@ -1,0 +1,15 @@
+# Redirects from what the browser requests to what we serve
+/odds-and-ends/                     https://mikes-old-portfolio.netlify.app/odds-and-ends/
+/odds-and-ends                      https://mikes-old-portfolio.netlify.app/odds-and-ends/
+/projects                           /
+/projects/                          /
+/projects/abstract-notebooks        /case-studies/abstract/
+/projects/abstract-notebooks/       /case-studies/abstract/
+/projects/in-the-margin             /case-studies/abstract/
+/projects/in-the-margin/            /case-studies/abstract/
+/projects/norwest                   https://mikes-old-portfolio.netlify.app/projects/norwest/
+/projects/norwest/                  https://mikes-old-portfolio.netlify.app/projects/norwest
+/projects/hbo-max                   https://mikes-old-portfolio.netlify.app/projects/hbo-max/
+/projects/hbo-max/                  https://mikes-old-portfolio.netlify.app/projects/hbo-max/
+/projects/nissan                    https://mikes-old-portfolio.netlify.app/projects/nissan/
+/projects/nissan/                   https://mikes-old-portfolio.netlify.app/projects/nissan/
