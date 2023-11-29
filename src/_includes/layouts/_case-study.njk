@@ -422,7 +422,7 @@ changefreq: monthly
             </div>
             <div class="w:100p max-w:640 md:max-w:none flex flex:col md:flex:row gap:32 section:pb">
                 {% for post in collections.casestudy | removeCurrent(title) %}
-                    <a href="/case-studies/{{ post.data.title | slugify }}/" class="relative z:1 w:100p radius:md overflow:hidden cs-thumb">
+                    <a href="/case-studies/{{ post.data.title | slugify }}/" class="relative z:1 w:100p radius:md overflow:hidden cs-thumb plausible-event-name=Click-Next-Case-Study">
                         <div class="relative w:100p">
                             <img
                                 src="/assets/images/graphics/thumb-{{ post.data.title | slugify }}.webp"
