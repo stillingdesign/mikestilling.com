@@ -1,6 +1,6 @@
 module.exports = {
     url: process.env.URL || "http://localhost:8080",
-    domain: "https://mikestilling.com",
+    domain: "https://www.mikestilling.com",
     name: "Mike Stilling",
 
     twitterHandle: "@mikestilling",
