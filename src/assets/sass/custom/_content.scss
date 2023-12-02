@@ -2,6 +2,8 @@
 @use "uniform" as *;
 @use "links" as *;
 
+// Style markdown
+
 .content\:experience,
 .markdown {
     & > h2,
@@ -10,13 +12,12 @@
     & > h5,
     & > h6,
     & > p,
-    & > pre { @include apply("w:100p max-w:640"); }
-    & > h2:first-child { @include apply("font:2xl sm:font:3xl mb:24 sm:mb:32"); }
-    & > h3 { @include apply("font:4xl sm:font:5xl mb:14 sm:mb:20"); }
-    & > h4 { @include apply("font:2xl sm:font:3xl mb:12 sm:mb:16"); }
+    & > pre { @include apply("w:100p max-w:640"); scroll-margin-top: 2rem; }
+    & > h2 { @include apply("font:4xl sm:font:5xl mb:14 sm:mb:20"); }
+    & > h3 { @include apply("font:2xl sm:font:3xl mb:12 sm:mb:16"); }
     & > p { @include apply("font:xl sm:font:2xl leading:170 color:content-i"); }
-    & > p + h3 { @include apply("mt:48 sm:mt:64"); }
-    & > p + h4 { @include apply("mt:36 sm:mt:48"); }
+    & > p + h2 { @include apply("mt:48 sm:mt:64"); }
+    & > p + h3 { @include apply("mt:36 sm:mt:48"); }
     & > p + p { @include apply("mt:20 sm:mt:28"); }
     & > pre + p,
     & > p + pre { @include apply("mt:20 sm:mt:28"); }
@@ -33,4 +34,8 @@
         &:before { @include apply("w:2 inline-block"); content: ''; }
         &:after  { @include apply("w:2 inline-block"); content: ''; }
     }
+
+    .full-width { @include apply("relative w:1248 max-w:100vw sm:px:48"); }
 }
+
+.markdown > :first-child { @include apply("font:2xl sm:font:3xl"); }

@@ -16,7 +16,7 @@ gradient: radial-gradient(100% 100% at 50% 0%, rgba(55, 0, 7, 1) 0%, rgba(55, 0,
 barba: firehydrant
 ---
 
-## When Mike joined FireHydrant's recently formed marketing team, they were trying to supplement <span class="space:nowrap">a slowing</span> outbound sales pipeline by ramping up inbound leads. Mike was responsible for rapidly re/designing and re/building touchpoints that supported. <span class="space:nowrap">this effort.</span>
+When Mike joined FireHydrant's recently formed marketing team, they were trying to supplement <span class="space:nowrap">a slowing</span> outbound sales pipeline by ramping up inbound leads. Mike was responsible for rapidly re/designing and re/building touchpoints that supported. <span class="space:nowrap">this effort.</span>
 
 Within his first 30 days, Mike redesigned and rebuilt the entire marketing site and shipped a brand-new "data story" campaign. In his first 60, he helped launch an all new documentation site, and overhauled the FireHydrant <span class="space:nowrap">visual identity.</span>
 
@@ -38,7 +38,7 @@ To meet velocity required, Mike had to adapt fast - relying heavily on his past 
     </figcaption>
 </figure>
 
-### on <span class="font:serif italic">Adaptability</span>
+## on <span class="font:serif italic">Adaptability</span>
 
 While interviewing with FireHydrant, the business outlook was fantastic... Almost immediately upon starting that had changed. So much so, that within Mike's first month, there was a round of layoffs that impacted <span class="space:nowrap">~20% of the company.</span>
 
@@ -52,7 +52,7 @@ To recap, the brand was rough, the site was a mess, the team was new, the outloo
     <span>Side note:</span> <span class="opacity:70">Screenshot themes may vary due <span class="space:nowrap">to new site having light/dark mode.</span></span>
 </div>
 
-#### Rebuild <span class="font:serif italic">and refine</span>
+### Rebuild <span class="font:serif italic">and refine</span>
 
 Getting up to speed on the framework, detangling the CMS, and unifying the styling across the existing site would take longer than just rebuilding it from scratch. With that, the unfamiliarity would linger for months, adding time to future projects.
 
@@ -128,7 +128,7 @@ The rebuild was approved and Mike got to work. He was able to deliver on his pro
     </li>
 </ul>
 
-### on <span class="font:serif italic">Technical Experience</span>
+## on <span class="font:serif italic">Technical Experience</span>
 
 <mark>The key to all of this progress in a short amount of time was Mike's direct experience doing these exact tasks:</mark> designing and building brands, campaigns, and websites from scratch for lean SaaS companies targetting enterprise customers.
 
@@ -183,7 +183,7 @@ For decisions like choosing an SSG or how to approach the CSS structure, or even
     </figcaption>
 </figure>
 
-#### Informing design
+### Informing design
 
 Most SaaS products and brands that are achieving excellence through design today are simply doing a better job at <mark>embracing the tools used to build it.</mark> Understanding this doesn't just lead to better quality, it also <mark>results in efficiency, collaboration, and, <span class="space:nowrap">ultimately, revenue.</span></mark>
 
@@ -242,13 +242,13 @@ In regards to FireHydrant, this knowledge and approach helped Mike quickly build
     </figure>
 </div>
 
-### on <span class="font:serif italic">Collaboration</span>
+## on <span class="font:serif italic">Collaboration</span>
 
 To enable collaboration is to open up processes, making them approachable and easy to understand — within reason, giving every team member the ability to express, build, and share their ideas in a format that progresses work vs. picks it apart.
 
 At FireHydrant, a major hurdle in the site rebuild/redesign was the existing product UI. Honestly, it was just bad — so much so that using it within marketing assets felt like a deturrent for prospects weighing the tool against competitors.
 
-#### Major hurdles
+### Major hurdles
 
 To get around ugly product UI, Mike decided to polish up a few key product screens on-the-fly and stub them into the new site —unintentionally sparking chaos <span class="space:nowrap">and outrage 🙈.</span>
 
@@ -290,7 +290,7 @@ Adding to the awkwardness, once shown, the direction of the silo'd product redes
 
 At this point, the site rebuild was blocked by need for better looking, more aligned product UI. The remaining product design team was also relatively new — which left two unfamiliar teams in a fairly awkward situation that had to be solved <span class="space:nowrap">rather quicky.</span>
 
-#### Removing silos
+### Removing silos
 
 To get past the awkwardness and engage the other team, Mike visualized the problem in a way that resonated. He replaced the polished UI with 1:1 screenshots of the product. Simultaneously, Mike converted the pages that he designed in code to Figma so that the product design team could easily experiment with solutions that they too felt <span class="space:nowrap">good about.</span>
 
@@ -312,7 +312,7 @@ This approach worked. <mark>Most importantly, it familiarized the two teams whil
     </figcaption>
 </figure>
 
-#### Building for teams
+### Building for teams
 
 Typically, Mike documents his work thoroughly work for a couple of reasons. First, the process of forcing oneself to present what they're doing acts as a check on logic and reasoning. Secondly, by sharing that documentation, it enables others to understand and build upon the work while also reviewing it, <span class="space:nowrap">preventing silos.</span>
 
@@ -363,7 +363,7 @@ After syncing up on the project, Mike helped with some final touches on the desi
     </figure>
 </div>
 
-#### Inspiring the organization
+### Inspiring the organization
 
 At the time, the rate at which the new marketing and docs sites were shipped along with the quality that was met, was a positive change of pace for FireHydrant. <mark>Seeing how these projects were built inspired the rest <span class="space:nowrap">of the team.</span></mark>
 
@@ -387,18 +387,18 @@ Mike eventually boomeranged back to Rewatch, but was fortunate enough to continu
     </figcaption>
 </figure>
 
-### Key Takeaways
+## Key Takeaways
 
 While Mike's time at FireHydrant was brief, it was impactful and loaded with new experiences that he learned from. Here are a few of the key takeaways:
 
-#### Seeing is believing
+### Seeing is believing
 
 It's easier to get people to believe in, trust, and advocate for something that they can see and interact with, vs. something they can only read or hear about. Sometimes, building an example is a better first step than asking for permission.
 
-#### Lead through action
+### Lead through action
 
 Aside from leading and managing the company, Robert Ross, the Co-founder and CEO of FireHydrant, regularly pushes code, writes blog/social posts, and records videos to market the product. It was inspiring to work with and alongside him. Mike strives to lead in similar ways, demonstrating empathy and understanding through first-hand experience, doing the work.
 
-#### Solutions > Problems
+### Solutions > Problems
 
 Focusing on how or why something is problematic is easier than finding a resolution to make it work within those constraints. Though, almost always, finding that solution is going to be more valuable and rewarding than basking in problems, even if the situation it was built within is less than ideal.

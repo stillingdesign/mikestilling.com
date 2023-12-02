@@ -5,7 +5,7 @@
 .antialiased { -webkit-font-smoothing: antialiased; }
 .blur\:fix { transform: translate3d(0, 0, 0); }
 
-// Accordion
+// Accordion Button
 [data-accordion-button]:focus-visible:before {
     content: '';
     z-index: -1;
@@ -23,6 +23,34 @@
     [data-accordion-button]:hover {
         opacity:1;
     }
+}
+
+// Blog copy to clipboard Button
+.blog-copy {
+    @include apply("transition:300");
+    p, svg { @include apply("transition:300"); }
+}
+
+@media (hover: hover) {
+    .blog-copy:hover {
+        @include apply("bg-opacity:10 border-opacity:20 transition:300");
+        p, svg { @include apply("opacity:80 transition:300"); }
+    }
+}
+
+.blog-copy:focus-visible {
+    @include apply("bg-opacity:10 border-opacity:20 transition:300");
+    p, svg { @include apply("opacity:80 transition:300"); }
+}
+
+.blog-copy > [data-confirm] {
+    transform: translate3d(0, 0, 0);
+    transition: all 400ms cubic-bezier(0.8, 0, 0.2, 1) 0ms;
+}
+
+.blog-copy.clicked > [data-confirm] {
+    transform: translate3d(-80px, 0, 0);
+    transition: all 400ms cubic-bezier(0.8, 0, 0.2, 1) 0ms;
 }
 
 // Custom scrollbar
