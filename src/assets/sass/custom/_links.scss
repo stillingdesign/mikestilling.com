@@ -12,20 +12,20 @@
 .btn\:lg { @include apply("font:md px:20 py:18")}
 
 // Button Colors
-.btn\:primary   { @include apply("color:link-hv bg:primary-rg bg-opacity:10 border:primary-rg border-opacity:30 backdrop backdrop-blur:sm transition:200 cubic-out"); transform: translate3d(0, 0, 0); }
-.btn\:primary-i { @include apply("color:ink-3-i bg:primary-rg bg-opacity:20 border:primary-rg border-opacity:50 backdrop backdrop-blur:sm transition:200 cubic-out"); transform: translate3d(0, 0, 0); }
-.btn\:white     { @include apply("color:ink-3-i bg:sheet-1    bg-opacity:10 border:sheet-1    border-opacity:30 backdrop backdrop-blur:sm transition:200 cubic-out"); transform: translate3d(0, 0, 0); }
-.btn\:black     { @include apply("color:ink-3   bg:sheet-6-i  bg-opacity:10 border:sheet-6-i  border-opacity:30 backdrop backdrop-blur:sm transition:200 cubic-out"); transform: translate3d(0, 0, 0); }
+.btn\:primary   { @include apply("color:link-hv bg:primary-rg bg-opacity:10 border:primary-rg border-opacity:30 backdrop backdrop-blur:sm transition:200 cubic-out"); }
+.btn\:primary-i { @include apply("color:ink-3-i bg:primary-rg bg-opacity:20 border:primary-rg border-opacity:50 backdrop backdrop-blur:sm transition:200 cubic-out"); }
+.btn\:white     { @include apply("color:ink-3-i bg:sheet-1    bg-opacity:10 border:sheet-1    border-opacity:30 backdrop backdrop-blur:sm transition:200 cubic-out"); }
+.btn\:black     { @include apply("color:ink-3   bg:sheet-6-i  bg-opacity:10 border:sheet-6-i  border-opacity:30 backdrop backdrop-blur:sm transition:200 cubic-out"); }
 
 // Special Buttons
 .btn\:nav-item {@include apply("flex align-items:start gap:16 md:gap:8 font:lg md:font:sm leading:130 py:12 px:24 sm:px:48 md:px:16 w:100p bg:primary-rg bg-opacity:0 transition:200 cubic-out")}
 
 // Button Hovers
 @media (hover: hover) {
-    .btn\:primary:hover   { @include apply("shadow:xs bg-opacity:20 border-opacity:50 transition:200 cubic-out"); transform: translate3d(0, 0, 0); animation: bump 50ms ease-in-out 25ms;}
-    .btn\:primary-i:hover { @include apply("bg-opacity:40 border-opacity:70 transition:200 cubic-out"); transform: translate3d(0, 0, 0); animation: bump 50ms ease-in-out 25ms; }
-    .btn\:white:hover     { @include apply("shadow:xs bg-opacity:30 border-opacity:50 transition:200 cubic-out"); transform: translate3d(0, 0, 0); animation: bump 50ms ease-in-out 25ms; }
-    .btn\:black:hover     { @include apply("shadow:xs bg-opacity:20 border-opacity:50 transition:200 cubic-out"); transform: translate3d(0, 0, 0); animation: bump 50ms ease-in-out 25ms; }
+    .btn\:primary:hover   { @include apply("shadow:xs bg-opacity:20 border-opacity:50 transition:200 cubic-out");}
+    .btn\:primary-i:hover { @include apply("bg-opacity:40 border-opacity:70 transition:200 cubic-out");}
+    .btn\:white:hover     { @include apply("shadow:xs bg-opacity:30 border-opacity:50 transition:200 cubic-out");}
+    .btn\:black:hover     { @include apply("shadow:xs bg-opacity:20 border-opacity:50 transition:200 cubic-out");}
     .btn\:nav-item:hover  { @include apply("bg-opacity:10 transition:200 cubic-out")}
     .hover\:bump:hover { animation: bump 50ms ease-in-out 25ms; }
 }
