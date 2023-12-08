@@ -16,11 +16,11 @@ gradient: radial-gradient(100% 100% at 50% 0%, rgba(43, 114, 253, 0.2) 0%, rgba(
 barba: rewatch
 ---
 
-## While moving from product to sales-led growth strategies and back again, with a fluctuating customer profile, and an ever-changing product — Mike was responsibile for finding ways to drive revenue through marketing, brand, and web design <span class="space:nowrap">at Rewatch.</span>
+While moving from product to sales-led growth strategies and back again, with a fluctuating customer profile, and an ever-changing product — Mike was responsibile for finding ways to drive revenue through marketing, brand, and web design <span class="space:nowrap">at Rewatch.</span>
 
 As the sole designer focused on marketing, this meant Mike <span class="space:nowrap">had to balance</span> efficiency and quality, while prioritizing impact.
 
-### <span class="font:serif italic">on</span> Efficiency
+## <span class="font:serif italic">on</span> Efficiency
 
 [Rewatch](https://rewatch.com/) generally has around ~20 employees and targets medium to enterprise sized businesses—making it important <span class="space:nowrap">to swing-up</span> and look more reliable <span class="space:nowrap">and established.</span>
 
@@ -42,7 +42,7 @@ The challenge was shaping the brand in a way that allowed assets to be designed 
     </figcaption>
 </figure>
 
-#### Building&nbsp; <span class="font:serif italic">fast</span>
+### Building&nbsp; <span class="font:serif italic">fast</span>
 
 At any given moment, "good" SaaS branding is fairly predictable. Strapped on time and striving for growth, reinventing this wasn't feasible or conducive to the business goals. Instead, Mike opted to borrow and build upon bits and pieces of what currently works for industry leading teams targetting <span class="space:nowrap">a similar audience.</span>
 
@@ -95,7 +95,7 @@ For the final touches, Mike looked toward the product for direction. Thankfully,
     </figure>
 </div>
 
-#### <span class="font:serif italic">under</span> the hood
+### <span class="font:serif italic">under</span> the hood
 
 <mark>Mike also designed, built, and managed Rewatch's marketing website.</mark> He chose tools that made building quick and flexible, while straightforward enough for the product folks to dive into, <span class="space:nowrap">if help</span> was <span class="space:nowrap">ever needed.</span>
 
@@ -128,7 +128,7 @@ Since CMS's often promote over-templatization, Mike and the team opted to only r
     </figcaption>
 </figure>
 
-### <span class="font:serif italic">on</span> Quality
+## <span class="font:serif italic">on</span> Quality
 
 Moving extremely fast with limited resources will lead to sloppiness. It's inevitable. At some point, there will be work that is not as great as it could be. At Rewatch, Mike tried to minimize this by taking a thoughtful approach <span class="space:nowrap">to visual direction.</span>
 
@@ -148,7 +148,7 @@ Relying on ample whitespace, consistent color, and bold typography allowed Mike 
     </figcaption>
 </figure>
 
-#### <span class="font:serif italic">increasing</span> Performance
+### <span class="font:serif italic">increasing</span> Performance
 
 Conveying SaaS concepts in a purely iconified or visual way, without text, is nearly impossible. Due to that, messaging plays a pivotal role within design for SaaS companies and is largely responsible for the performance and result <span class="space:nowrap">of design outputs.</span>
 
@@ -221,7 +221,7 @@ Although, benefits still had a time and place. <mark>Working in unison with Darc
 
 On the marketing site, this lead to the approach of capturing interest with a relatable benefit as a headline, then clarified immediately with "how" that benefit will be delivered via features in the subhead and following <span class="space:nowrap">supporting sections.</span>
 
-### <span class="font:serif italic">Prioritizing</span> impact
+## <span class="font:serif italic">Prioritizing</span> impact
 
 How we spend our time is always a tradeoff. To actively focus on "X" means not focusing on "Y" — and, when there's an endless pile of work in front of us, it's easy to lose sight <span class="space:nowrap">of this.</span>
 
@@ -229,7 +229,7 @@ To add to this pile, most <mark>mainstream marketing practices, such as content 
 
 Due to this widespread adoption, <mark>Mike believes many teams are just going through the motions; not considering whether the content itself is meaningful or deeply analyzing performance to clarify these tactics actually work and <span class="space:nowrap">warrant our time.</span></mark>
 
-#### <span class="font:serif italic">Shifting</span> focus
+### <span class="font:serif italic">Shifting</span> focus
 
 At Rewatch, Mike had spent ~50% of his time creating assets for content marketing lead by the marketing team. Continually, the results of this tactic had been abysmal. For reference, like: 150 impressions per average social post, engagement only coming from internal employees, <10 clicks leading to page views per month, and almost never <span class="space:nowrap">a conversion...</span>
 
@@ -370,15 +370,15 @@ At Rewatch, homepage edits are a touchy subject. To get around this, Mike also b
     </figure>
 </div>
 
-### <span class="font:serif italic">Key</span> Takeaways
+## <span class="font:serif italic">Key</span> Takeaways
 
 Throughout Mike's ~2 years at Rewatch, he has grown <span class="space:nowrap">a lot.</span> <span class="space:nowrap">A few</span> of the main takeaways from his time <span class="space:nowrap">there are:</span>
 
-#### First, nail the basics
+### First, nail the basics
 
 Whether it's design, dev, or marketing — the fundamental aspects of anything are what matter most. Make sure they <span class="space:nowrap">work before</span> building <span class="space:nowrap">on top of them.</span>
 
-#### Simple works
+### Simple works
 
 At one point, Mike tried building out 3D UI mocks like Microsoft Fluent uses... It was a lot, and a total flop. He reverted to regular 1:1 UI mocks and they looked just as good. In summary, simple doesn't mean boring or ugly. Usually it's easier to execute well and <span class="space:nowrap">understand anyway.</span>
 
@@ -406,6 +406,6 @@ At one point, Mike tried building out 3D UI mocks like Microsoft Fluent uses... 
     </figcaption>
 </figure>
 
-#### Marketing is part of the job
+### Marketing is part of the job
 
 Just like designers get ideas and feedback from their friends in marketing, marketers should be getting ideas and feedback from folks in design. As creators, we have the unique ability to build ideas outside of a word doc, take advantage <span class="space:nowrap">of that.</span>

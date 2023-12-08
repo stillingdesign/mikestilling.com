@@ -48,13 +48,22 @@ $utilities: (
             22rem: 22rem,
         ),
     ),
+    grid-template-columns: (
+        variants: (
+            toc: minmax(0, 1fr) 640px minmax(0, 1fr),
+        ),
+    ),
     height: (
         variants: (
             plus4: calc(100% + 0.25rem),
             100p: 100%,
             14: 0.875rem,
             20: 1.25rem,
+            24: 1.5rem,
             28: 1.75rem,
+            30: 1.875rem,
+            48: 3rem,
+            60: 3.75rem,
             minus56: calc(100vh - 3.5rem),
         ),
     ),
@@ -74,14 +83,21 @@ $utilities: (
             90: 90%,
         ),
     ),
+    max-height: (
+        variants: (
+            896: 56rem,
+        ),
+    ),
     max-width: (
         variants: (
             '67p': 67%,
             '8-12': 75%,
             154: 9.625rem,
             304: 19rem,
+            368: 23rem,
             576: 36rem,
             672: 42rem,
+            688: 43rem,
             704: 44rem,
             736: 46rem,
             1920: 120rem,
@@ -106,6 +122,7 @@ $utilities: (
             88: 5.5rem,
             96: 6rem,
             112: 7rem,
+            768: 48rem,
         ),
     ),
     right: (
@@ -156,8 +173,11 @@ $utilities: (
         variants: (
             auto: auto,
             0: 0,
+            1248: 78rem,
             plus4: calc(100% + 0.25rem),
+            plus12: calc(100% + 0.75rem),
             plus16: calc(100% + 1rem),
+            plus24: calc(100% + 1.5rem),
             plus48: calc(100% + 3rem),
             plus96: calc(100% + 6rem),
             50minus14: calc(50% - 0.875rem),

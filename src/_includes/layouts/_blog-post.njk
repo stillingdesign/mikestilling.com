@@ -1,0 +1,187 @@
+---
+layout: "main.njk"
+tags: blog
+theme: dark
+changefreq: monthly
+---
+{% import "components/_icons.njk" as icons %}
+
+<main>
+
+    {# Hero Copy #}
+    <section data-blog-hero class="section">
+        <div class="absolute top:0 left:0 flex align-items:center justify-content:center w:100p min-h:768 max-h:896 overflow:hidden" style="height: calc(100vh + 1.5rem);">
+            <div class="block w:100p h:100p" style="background: {{ background }};"></div>
+            <div data-blog-watermark aria-hidden="true" class="hidden lg:block absolute bottom:n64 leading:100 uppercase space:nowrap gradient-text bg:sheet-1 bg-opacity:2 tracking:tighter font:22rem">
+                {{ title | safe }}
+            </div>
+        </div>
+        <div class="container pt:112 sm:pt:128 md:pt:144 flex flex:col align-items:center">
+            <div data-blog-hero-text class="flex flex:col align-items:center text:center mb:64">
+                <div class="relative flex flex:col align-items:center gap:4 text:center mb:36 z:1 overflow:hidden">
+                    <p data-blog-type class="font:serif font:xl">
+                        Opinion
+                    </p>
+                    <div data-blog-type-line class="w:100p border-b:1" style="border-color: {{ accent }};"></div>
+                </div>
+                <h1 data-blog-headline class="font:serif font:9xl sm:font:8xl md:font:10xl leading:110 mb:24 tracking:tight">
+                    {{ headline | safe }}
+                </h1>
+                <p data-blog-subhead class="font:xl sm:font:2xl opacity:70 leading:130">
+                    {{ subhead | safe }}
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    {# Subheader Scroll Region #}
+    <div data-pin-blog-subheader class="relative w:100p flex flex:col align-items:center justify-content:center">
+
+        {# Subheader #}
+        <div data-blog-subheader class="section z:5">
+            <div data-blog-subheader-bg class="container flex align-items:center justify-content:between gap:16 md:gap:0 py:12 font:sm leading:100 border-t:1 border:dashed border:white border-opacity:10" style="background-color:{{ background }}">
+                <div class="absolute bottom:n1 right:0 w:100p border-b:1 border:white border-opacity:10 border:dashed"></div>
+                <div data-scroll-indicator class="absolute bottom:n1 left:0 border-b:1 border:ink-1"></div>
+                <div class="flex-shrink:0 flex align-items:center justify-content:start gap:12 mt:n1 md:w:160 opacity:50">
+                    {{ icons.calendar('w:14 mt:n1') }}
+                    <p class="space:nowrap">
+                        {{ date | dateFull }}
+                    </p>
+                </div>
+                <div class="relative hidden sm:block w:100p h:30 overflow:hidden">
+                    <div data-blog-subhead-toggle class="relative w:100p h:60 flex flex:col align-items:center">
+                        <button data-copy-to-clipboard type="button" aria-label="Copy URL" title="Copy URL" class="relative flex-shrink:0 w:100p md:w:auto max-w:368 md:max-w:none flex align-items:center gap:12 font:mono font:xs tracking:tighter py:8 px:8 radius:md overflow:hidden bg:white bg-opacity:4 border:1 border:white border-opacity:4 blog-copy">
+                            <p class="relative w:100p opacity:50 space:nowrap pb:2 mb:n2 md:pr:20" style="mask-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 95%); -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 90%, rgba(0,0,0,0) 95%);">
+                                {{ base.url }}{{ page.url }}
+                            </p>
+                            <div data-confirm class="absolute right:n80 h:100p flex align-items:center bg:white bg-opacity:4 border-l:1 backdrop backdrop-blur:sm color:white pl:8 w:80">
+                                Copied
+                            </div>
+                            {{ icons.copy('absolute right:8 w:14 opacity:50 flex-shrink:0') }}
+                        </button>
+                        <div class="relative flex flex-shrink:0 align-items:center justify-content:center leading:120 font:xl font:serif text:center w:100p h:30">
+                            <div class="block max-w:640 overflow:hidden ellipsis space:nowrap mt:2">
+                                {{ headline | safe}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-shrink:0 flex align-items:center justify-content:end gap:12 md:w:160">
+                    <p class="opacity:50">
+                        By Mike Stilling
+                    </p>
+                    <img
+                        src="/assets/images/graphics/mike-stilling-48.webp"
+                        alt=""
+                        width="24" height="24"
+                        class="relative w:24 h:auto radius:full"
+                    />
+                </div>
+            </div>
+        </div>
+
+        {# Hero Image #}
+        <section class="section sm:pb:56 md:pb:96 z:6">
+            <div class="container">
+                <figure data-blog-hero-img class="relative flex ratio:1-1 sm:ratio:4-3 md:ratio:16-9 ml:n24 sm:ml:0 w:plus48 sm:w:100p flex align-items:center justify-content:center overflow:hidden z:1" style="background-color: {{ accent }};">
+                    <img
+                        src="{{ heroImage }}"
+                        alt="{{ ogImageAlt}}"
+                        width="1152" height="648"
+                        class="absolute h:100p z:1 object:cover object:center"
+                        loading="eager"
+                    />
+                </figure>
+                {% if imageAttribution %}
+                <figcaption class="absolute right:24 sm:right:n4 bottom:n24 sm:bottom:0 transform transform:bottom-right sm:rotate:90 font:xs uppercase tracking:loosest opacity:50">
+                    {{ imageAttribution}}
+                </figcaption>
+                {% endif %}
+            </div>
+        </section>
+
+        {# Article #}
+        <section id="content-start" data-blog-content class="section pb:48 md:pb:72 overflow:hidden">
+            <div class="relative w:100p md:max-w:1152 flex flex:col align-items:center {% if toc %}md:grid md:align-items:start md:grid-cols:toc md:col-gap:28 lg:col-gap:48{% endif %}">
+                {# ToC #}
+                {% if toc %}
+                    <div data-blog-toc class="relative w:100p md:w:auto flex flex:col align-items:center sm:max-w:640 md:max-w:none mb:36 md:mb:0 px:24 sm:px:0 pt:40 sm:pt:0 md:pt:8 pb:48 sm:pb:0">
+                        <div class="sm:hidden w:100p h:100p absolute top:0 left:0">
+                            <div class="relative w:100p h:100p flex-shrink:0" style="background: {{ background }};"></div>
+                            {#<div class="absolute bottom:n10 w:100p left:0 flex justify-content:center overflow:hidden h:24">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 5136 24" class="flex-shrink:0 color:sheet-6-i h:16 w:auto max-w:none">
+                                    <path d="M24 20 0 0v24h5136V0l-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20-24-20-24 20L96 0 72 20 48 0 24 20Z"/>
+                                </svg>
+                            </div>#}
+                        </div>
+                        <h2 class="relative font:xl font:serif mb:8 w:100p max-w:640">
+                            {% if tocLabel %}{{ tocLabel }}{% else %}Contents{% endif %}
+                        </h2>
+                        <ol class="relative w:100p max-w:640 flex flex:col">
+                            <div class="absolute bottom:n1 w:100p md:hidden border-t:1 border:white border:dashed border-opacity:10"></div>
+                            {% for link in toc %}
+                                <li class="relative w:100p border-t:1 md:border-t:0 border:white border:dashed border-opacity:10">
+                                    <a data-anchor-scroll href="{{ link.link }}" class="relative w:plus12 ml:n12 px:12 py:4 flex align-items:center radius:full focus-visible bg:primary-rg border:1 border:primary-rg bg-opacity:0 border-opacity:0 transition:200 blog-anchor">
+                                        <div class="flex-shrink:0 font:2xs opacity:50 transform translate-y:1 font:mono leading:100 uppercase text:center w:12">
+                                            {{ link.tag }}
+                                        </div>
+                                        <div class="relative flex w:100p blog-anchor-fade">
+                                            <p data-anchor-text class="block pl:12 space:nowrap opacity:70 flex-shrink:0">
+                                                {{ link.title }}
+                                            </p>
+                                        </div>
+                                    </a>
+                                    {% if link.items %}
+                                        <ol class="w:100p flex flex:col">
+                                            {% for item in link.items %}
+                                                <li class="relative w:100p border-t:1 md:border-t:0 border:white border:dashed border-opacity:10">
+                                                    <a data-anchor-scroll href="{{ item.link }}" class="relative w:plus12 ml:n12 px:12 py:4 flex align-items:center radius:full focus-visible bg:primary-rg border:1 border:primary-rg bg-opacity:0 border-opacity:0 transition:200 blog-anchor">
+                                                        <div class="flex-shrink:0 font:2xs opacity:50 transform translate-y:1 font:mono leading:100 uppercase">
+                                                            {{ item.tag }}
+                                                        </div>
+                                                        <div class="relative flex w:100p blog-anchor-fade">
+                                                            <p data-anchor-text class="block pl:12 space:nowrap opacity:70 flex-shrink:0">
+                                                                {{ item.title }}
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ol>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                {% endif %}
+                {# Content #}
+                <div class="relative flex flex:col align-items:center w:100p max-w:688 sm:max-w:640 md:w:auto md:max-w:none markdown blog px:24 sm:px:0">
+                    {{ content | safe }}
+                </div>
+                {# Offset toc width for centering #}
+                {% if toc %}
+                    <div class="hidden md:flex w:auto"></div>
+                {% endif %}
+            </div>
+        </section>
+
+    </div>
+
+    {# CTAs #}
+    <section data-blog-cta class="section section:pb">
+        <div class="container flex flex:col align-items:center justify-content:center ratio:1-1 sm:ratio:16-9 text:center" style="background: {{ background }}">
+            <p data-blog-cta-sub class="relative font:2xl sm:font:3xl md:font:4xl mb:8 sm:mb:4">
+                Have an opinion?
+            </p>
+            <p data-blog-cta-head class="relative font:8xl sm:font:10xl md:font:12xl font:serif leading:110 mb:12" style="color: {{ accent }}">
+                Share your 2¢<br> on LinkedIn
+            </p>
+            <div data-blog-cta-btn class="relative">
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ base.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer" class="btn btn:white btn:md">
+                    Start a LinkedIn Post
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>

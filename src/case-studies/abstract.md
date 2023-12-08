@@ -16,7 +16,7 @@ gradient: radial-gradient(100% 100% at 50% 0%, rgba(80, 94, 206, 0.2) 0%, rgba(8
 barba: abstract
 ---
 
-## In early 2021, Mike joined Abstract as a Senior Web Designer. Mike's core focus at Abstract was helping the marketing org rapidly transition and repurpose touchpoints to promote the new Notebooks product.
+In early 2021, Mike joined Abstract as a Senior Web Designer. Mike's core focus at Abstract was helping the marketing org rapidly transition and repurpose touchpoints to promote the new Notebooks product.
 
 Mike's time at Abstract ended with the acquisition of Notebooks by Adobe in November of 2021. Leading up to that, Mike had rebuilt and redesigned the core pages of the marketing site, shipped an all new content-hub, redesigned the sign-up experience, and created numerous <span class="space:nowrap">campaign assets.</span>
 
@@ -37,7 +37,7 @@ Abstract's design methodology and practice was top notch. Upon joining, Mike had
 </figure>
 
 
-### Getting <span class="font:serif italic">started</span>
+## Getting <span class="font:serif italic">started</span>
 
 Abstract was Mike's first experience working in-house at a SaaS company. Prior to that, he had worked with tech companies from the agency side. To some extent, ignorance <span class="space:nowrap">was bliss.</span>
 
@@ -65,7 +65,7 @@ If he did, maybe it would have been a little more intimidating. Instead, he was 
     </figcaption>
 </figure>
 
-#### Learning from the best
+### Learning from the best
 
 Working with a team achieving a high level of visual craft can be hard to come by. As a designer, getting on a team like this is invaluable. We all see great work every day, but being a part of building it reveals how <span class="space:nowrap">it's getting done.</span>
 
@@ -136,11 +136,11 @@ Since the brand team became tiny, it was adopted by the product team. This helpe
     </figcaption>
 </figure>
 
-### The <span class="font:serif italic">work</span>
+## The <span class="font:serif italic">work</span>
 
 Above are images of the content hub and signup flow Mike worked on. Aside from that, and some blog graphics, he helped design and build a bunch of pages on the <span class="space:nowrap">marketing site.</span>
 
-#### Use case pages
+### Use case pages
 
 With the launch of a new product came the need to explain what it was and who it was for. In response, the team opted to create a few new use case pages that walked through the different steps of a design process that Notebooks <span class="space:nowrap">helped with.</span>
 
@@ -158,7 +158,7 @@ With the launch of a new product came the need to explain what it was and who it
     </figcaption>
 </figure>
 
-####  Home V24 R7 Final Final
+###  Home V24 R7 Final Final
 
 Mike iterated on the homepage a handful of times. Driving conversion while also balancing two, completely different products in one place was <span class="space:nowrap">a little tricky.</span>
 
@@ -190,10 +190,10 @@ Mike iterated on the homepage a handful of times. Driving conversion while also 
     </figcaption>
 </figure>
 
-#### Marketing Ops
+### Marketing Ops
 
 While at Abstract, Mike wore a few different hats – also lending <span class="space:nowrap">a helping</span> hand in analytic implementation/analysis, email automation, and collecting/sending data all over the place. Since the site was built in Webflow, most of this was done through <span class="space:nowrap">no-code automations.</span>
 
-#### Acknowledgement
+### Acknowledgement
 
 Abstract's homepage and use cases along with In the Margin that Mike designed/built were featured in Webflow marketing assets a few <span class="space:nowrap">different times.</span>
