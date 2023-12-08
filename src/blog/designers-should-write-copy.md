@@ -5,7 +5,7 @@ title: "Designers should write copy"
 seoTitle: "Designers should write copy"
 seoDescription: We want a "seat at the table" but what are we really strategizing?
 ogTitle: "Designers should write copy"
-ogDesc: We want a "seat at the table" but what are we really strategizing?
+ogDescription: We want a "seat at the table" but what are we really strategizing?
 ogImage: "/assets/images/og/abstract.jpg"
 ogImageAlt: "A screenshot of Abstract's homepage hero section that Mike designed"
 headline: Designers should <span class="sm:space:nowrap">write <span class="space:nowrap"><span class="line-through">code</span> copy</span></span>
