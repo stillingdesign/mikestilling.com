@@ -8,7 +8,7 @@ ogTitle: "Designers should write copy"
 ogDesc: We want a "seat at the table" but what are we really strategizing?
 ogImage: "/assets/images/og/abstract.jpg"
 ogImageAlt: "A screenshot of Abstract's homepage hero section that Mike designed"
-headline: Designers should <span class="space:nowrap">write <span class="line-through">code</span> copy</span>
+headline: Designers should <span class="sm:space:nowrap">write <span class="space:nowrap"><span class="line-through">code</span> copy</span></span>
 subhead: Wouldn't it make sense to write the words that we're designing?
 background: "#284357"
 accent: "#ea7777"

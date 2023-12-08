@@ -24,7 +24,7 @@ changefreq: monthly
                     </p>
                     <div data-blog-type-line class="w:100p border-b:1" style="border-color: {{ accent }};"></div>
                 </div>
-                <h1 data-blog-headline class="font:serif font:8xl sm:font:8xl md:font:10xl leading:110 mb:24 tracking:tight">
+                <h1 data-blog-headline class="font:serif font:9xl sm:font:8xl md:font:10xl leading:110 mb:24 tracking:tight">
                     {{ headline | safe }}
                 </h1>
                 <p data-blog-subhead class="font:xl sm:font:2xl opacity:70 leading:130">
@@ -83,15 +83,20 @@ changefreq: monthly
         {# Hero Image #}
         <section class="section sm:pb:56 md:pb:96 z:6">
             <div class="container">
-                <div data-blog-hero-img class="relative flex ratio:1-1 sm:ratio:4-3 md:ratio:16-9 ml:n24 sm:ml:0 w:plus48 sm:w:100p flex align-items:center justify-content:center overflow:hidden z:1" style="background-color: {{ accent }};">
+                <figure data-blog-hero-img class="relative flex ratio:1-1 sm:ratio:4-3 md:ratio:16-9 ml:n24 sm:ml:0 w:plus48 sm:w:100p flex align-items:center justify-content:center overflow:hidden z:1" style="background-color: {{ accent }};">
                     <img
                         src="{{ heroImage }}"
-                        alt="Image generate by MidJourney of woman fallen asleep on floor while looking at laptop."
+                        alt="{{ ogImageAlt}}"
                         width="1152" height="648"
                         class="absolute h:100p z:1 object:cover object:center"
                         loading="eager"
                     />
-                </div>
+                </figure>
+                {% if imageAttribution %}
+                <figcaption class="absolute right:24 sm:right:n4 bottom:n24 sm:bottom:0 transform transform:bottom-right sm:rotate:90 font:xs uppercase tracking:loosest opacity:50">
+                    {{ imageAttribution}}
+                </figcaption>
+                {% endif %}
             </div>
         </section>
 
