@@ -9,6 +9,7 @@
     "ogDesc": "See how Mike helped Abstract market their all new Notebooks product",
     "ogImage": "/assets/images/og/abstract.jpg",
     "ogImageAlt": "A screenshot of Abstract's homepage hero section that Mike designed",
+    "heroImage": "/assets/images/blog/marketing-is-boring-hero.webp",
     "headline": "B2B SaaS Marketing <span class='space:nowrap'>is Boring</span>",
     "subhead": "Cause nobody is actually interested <span class='space:nowrap'>in solutions to enterprise problems</span>",
     "background": "#1b2723",

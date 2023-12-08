@@ -83,7 +83,15 @@ changefreq: monthly
         {# Hero Image #}
         <section class="section sm:pb:56 md:pb:96 z:6">
             <div class="container">
-                <div data-blog-hero-img class="flex ratio:1-1 sm:ratio:4-3 md:ratio:16-9 bg:sheet-4-i ml:n24 sm:ml:0 w:plus48 sm:w:100p"></div>
+                <div data-blog-hero-img class="relative flex ratio:1-1 sm:ratio:4-3 md:ratio:16-9 ml:n24 sm:ml:0 w:plus48 sm:w:100p flex align-items:center justify-content:center overflow:hidden z:1" style="background-color: {{ accent }};">
+                    <img
+                        src="{{ heroImage }}"
+                        alt="Image generate by MidJourney of woman fallen asleep on floor while looking at laptop."
+                        width="1152" height="648"
+                        class="relative w:100p h:auto absolute z:1"
+                        loading="eager"
+                    />
+                </div>
             </div>
         </section>
 
