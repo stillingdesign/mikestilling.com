@@ -1,7 +1,7 @@
 ---json
 {
     "layout": "layouts/_blog-post.njk",
-    "date": "2023-12-07",
+    "date": "2023-12-12",
     "title": "B2B SaaS Marketing is Boring",
     "seoTitle": "B2B SaaS Marketing is Boring",
     "ogTitle": "B2B SaaS Marketing is Boring",
