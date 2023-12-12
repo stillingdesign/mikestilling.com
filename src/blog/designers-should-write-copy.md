@@ -113,8 +113,8 @@ As designers, we often add visual flair to communication but overlook the substa
     <blockquote class="relative w:100p">
         <div class="inline font:serif italic font:2xl sm:font:6xl color:content-i">
             <div class="absolute top:n10 sm:top:n16 left:n24 sm:left:n40 font:7xl sm:font:10xl" style="color: {{ accent }};">“</div>
-                The existence of Lorem Ipsum suggests our indifference to substance.
-            <div class="inline-block font:7xl sm:font:10xl transform translate-y:18 sm:translate-y:24 ml:n10 sm:ml:n12" style="line-height:0; color: {{ accent }};">”</div>
+                The existence of Lorem Ipsum suggests our indifference <span class="space:nowrap">to substance.
+            <div class="inline-block font:7xl sm:font:10xl transform translate-y:18 sm:translate-y:24 ml:n10 sm:ml:n12" style="line-height:0; color: {{ accent }};">”</div></span>
         </div>
     </blockquote>
 </div>
