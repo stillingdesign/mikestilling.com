@@ -336,7 +336,7 @@ changefreq: daily
     </section>
 
     {# Articles #}
-    <section class="section section:pb">
+    <section class="section section:pb mt:n8 sm:mt:0">
         <div class="container">
             {# Headline #}
             <h2 class="flex flex:col font:serif leading:100 font:12vw sm:font:8xl md:font:11xl mb:24 sm:mb:48">
@@ -348,39 +348,82 @@ changefreq: daily
                 </div>
             </h2>
             <div aria-hidden="true" class="relative z:1 w:100p flex justify-content:center align-items:center overflow:hidden">
-                <ul class="w:100p flex gap:28">
-                    <li class="w:100p flex ratio:3-4 bg:sheet-4-i"></li>
-                    <li class="w:100p flex ratio:3-4 bg:sheet-4-i"></li>
-                    <li class="w:100p flex ratio:3-4 bg:sheet-4-i"></li>
+                <ul class="relative w:100p flex flex:col sm:grid grid-cols:2 md:grid-cols:3 gap:28">
+                    {% for post in collections.blog | reverse %}
+                        <li class="relative w:100p flex ratio:3-4 bg:sheet-4-i">
+                            <a data-blog-thumbnail href="{{ post.url }}" class="relative z:1 w:100p h:100p flex flex:col align-items:center justify-content:center overflow:hidden outline:none">
+                                <img
+                                    src="{{ post.data.thumbImage }}"
+                                    alt="{{ post.data.ogImageAlt }}"
+                                    width="366" height="488"
+                                    class="absolute w:100p h:auto"
+                                    loading="lazy"
+                                    decoding="async"
+                                    data-blog-thumbnail-img
+                                />
+                                <div class="absolute top:0 bottom:0 w:100p h:100p opacity:90" style="background-color: {{ post.data.background }}; mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 80%); -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 80%);"></div>
+                                <div class="relative flex flex:col justify-content:between w:100p h:100p p:28">
+                                    <div class="flex align-items:center justify-content:between">
+                                        <div class="px:10 pt:6 pb:4 font:xs uppercase tracking:loosest bg:sheet-6-i bg-opacity:40 radius:xs backdrop backdrop-blur:sm mt:2">
+                                            <p class="mb:1">
+                                                {{ post.data.date | dateShort }}
+                                            </p>
+                                        </div>
+                                        <div data-blog-thumbnail-button class="relative z:1 radius:full bg:sheet-1 color:sheet-6-i overflow:hidden sm:w:32" style="height:32px;">
+                                            <div data-blog-thumbnail-button-inner class="absolute right:0 top:0 flex align-items:center justify-content:end flex-shrink:0">
+                                                <div class="flex-shrink:0 pl:14 font:sm medium mb:1">
+                                                    Read article
+                                                </div>
+                                                <div class="flex-shrink:0 flex align-items:center justify-content:center w:32 h:32">
+                                                    {{ icons.arrowRight('w:16 ml:1 mb:1') }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w:100p">
+                                        <h3 class="font:3xl md:font:2xl lg:font:4xl tracking:n6 leading:120 mb:4">
+                                            {% if post.data.thumbHeadline %}
+                                                {{ post.data.thumbHeadline | safe }}
+                                            {% else %}
+                                                {{ post.data.headline | safe }}
+                                            {% endif %}
+                                        </h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                    <li class="relative w:100p hidden md:flex align-items:center justify-content:center ratio:3-4 bg:sheet-4-i z:1 overflow:hidden">
+                        <div class="absolute gap:12 bg:sheet-1-i sm:font:xl color:ink-1-i px:12 transform rotate:45 flex-shrink:0 flex border-y:1 border:white border-opacity:10">
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                        </div>
+                        <div class="absolute gap:12 bg:sheet-3-i sm:font:xl color:ink-1-i px:12 transform rotate:n45 flex-shrink:0 flex border-y:1 border:white border-opacity:6">
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
+                        </div>
+                    </li>
                 </ul>
-                <div class="absolute flex gap:12 bg:primary-rg sm:font:xl color:white px:12 transform rotate:12">
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                </div>
-                <div class="absolute flex gap:12 bg:white sm:font:xl color:primary-rg px:12 transform rotate:n12">
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                    <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                </div>
             </div>
         </div>
     </section>
