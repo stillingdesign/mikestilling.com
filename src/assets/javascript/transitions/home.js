@@ -35,8 +35,8 @@ function homeScroll() {
             function leave() {
                 const tl = gsap.timeline({});
                 tl
-                    .to(img, { duration: 0.75, scale: '1', ease: "power3.out" })
-                    .to(button, { duration: 0.75, width: 32, ease: "power3.out" }, 0)
+                    .to(img, { duration: 0.75, overwrite:true, scale: '1', ease: "power3.out" })
+                    .to(button, { duration: 0.75, width: 32, overwrite:true, ease: "power3.out" }, 0)
             }
             thumb.addEventListener("mouseenter", enter);
             thumb.addEventListener("mouseleave", leave);
