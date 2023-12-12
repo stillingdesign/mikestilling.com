@@ -1,7 +1,7 @@
 ---json
 {
     "layout": "layouts/_blog-post.njk",
-    "date": "2023-12-15",
+    "date": "2023-12-13",
     "title": "Designers should write copy",
     "seoTitle": "Designers should write copy",
     "ogTitle": "Designers should write copy",
