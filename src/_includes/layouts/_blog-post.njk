@@ -20,7 +20,7 @@ changefreq: monthly
             <div data-blog-hero-text class="flex flex:col align-items:center text:center mb:64">
                 <div class="relative flex flex:col align-items:center gap:4 text:center mb:36 z:1 overflow:hidden">
                     <p data-blog-type class="font:serif font:xl">
-                        Opinion
+                        {% if type %}{{ type }}{% else %}Opinion{% endif %}
                     </p>
                     <div data-blog-type-line class="w:100p border-b:1" style="border-color: {{ accent }};"></div>
                 </div>
