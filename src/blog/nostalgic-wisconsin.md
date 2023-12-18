@@ -118,4 +118,52 @@ Outside of one of my brothers, who took up milking as a high school job, our enc
 
 ## The Great Outdoors
 
-`WIP` Stay tuned for more. I'm still writing this article, but wanted to share it with some folks ahead of completing it.
+Throughout the majority of my childhood, my parents operated a landscaping business, nestled in the humble crossroads of Abel's Corners. This modest yet bustling hub comprised of a no-frills office building, a retail nursery brimming with greenery, and two expansive gravel lots, each a treasure trove of landscape materials. To us, four adventurous boys, this place was nothing short of a playground without end, each day offering a new realm of excitement and discovery.
+
+<figure class="full-width flex flex:col align-items:center text:center mt:36 mb:18 sm:mb:64">
+    <img
+        src="/assets/images/blog/nostalgia-outside-inside.webp"
+        alt="A photograph from the 1990's of two young boys playing in a creek surrounded by cattle pasture"
+        width="1152" height="648"
+        class="relative w:100p h:auto max-w:none z:1"
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mb:12 mt:16 sm:mt:24 sm:mb:n32">
+        A boring day  <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using MidJourney</span>
+    </figcaption>
+</figure>
+
+Though skidsteers and various construction equipment were always within our reach, bicycles were our preferred mode of transport. We devoted countless hours to crafting makeshift ramps, pieced together from mounds of dirt and discarded lumber scraps. Equally endless were the hours we spent coaxing the next youngest among us to take a daring leap off these creations, each jump a mix of bravery and brotherly encouragement in our self-made world of adventure.
+
+<figure class="w:100p flex flex:col align-items:center text:center mt:36 mb:18 sm:mb:64">
+    <img
+        src="/assets/images/blog/nostalgia-bikes.webp"
+        alt="A photograph of two boys launching themselves into the air on bxm bikes off of a dirt mound"
+        width="640" height="640"
+        class="relative w:100p h:auto max-w:none z:1"
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mb:12 mt:16 sm:mt:24 sm:mb:n32">
+        A pile of fun <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using MidJourney</span>
+    </figcaption>
+</figure>
+
+Much to the dismay of those diligently working in the office, our outdoor adventures often found their way indoors when boredom struck. I credit a significant portion of my digital creativity to the imaginative escapades behind that business, seamlessly intertwined with the early access I had to the computers it provided that were equipped with design software.
+
+<figure class="w:100p flex flex:col align-items:center text:center mt:36 mb:18 sm:mb:64">
+    <img
+        src="/assets/images/blog/nostalgia-dirty-office.webp"
+        alt="A photograph of two boys launching themselves into the air on bxm bikes off of a dirt mound"
+        width="640" height="640"
+        class="relative w:100p h:auto max-w:none z:1"
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mb:12 mt:16 sm:mt:24 sm:mb:n32">
+        Bringing outside inside <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
+    </figcaption>
+</figure>
+
+`WIP` Stay tuned for more. I'll continue adding to this as more childhood thoughts come to mind. Thanks for reading!
