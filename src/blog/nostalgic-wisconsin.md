@@ -64,7 +64,7 @@ My parents' early years were deeply connected to the daily routines of dairy far
         decoding="async"
     />
     <figcaption class="mb:12 mt:16 sm:mt:24 sm:mb:n32">
-        Mom with her friends <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
+        With her friends <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
     </figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ In contrast, my father, who I lost when I was twelve, spoke of the cows in a dif
         decoding="async"
     />
     <figcaption class="mb:12 mt:16 sm:mt:24 sm:mb:n32">
-        Dad feeding the cows <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
+        Feeding the cows <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
     </figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ Outside of one of my brothers, who took up milking as a high school job, our enc
         decoding="async"
     />
     <figcaption class="mb:12 mt:16 sm:mt:24 sm:mb:n32">
-        Playing in the Creek at Grandma's <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
+        Playing in the Creek <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span class="space:nowrap">Using OpenAI's DALL•E</span>
     </figcaption>
 </figure>
 
