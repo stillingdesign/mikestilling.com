@@ -94,7 +94,7 @@ In contrast, my father, who I lost when I was twelve, spoke of the cows in a dif
     </figcaption>
 </figure>
 
-Following my father’s untimely passing, a deep bond formed between my grandfather and me. By now, I’ve sat through most of his tales at least 20 times. A personal favority is a vivid memory of him, despite nursing a broken leg, valiantly chasing down wayward cows that had slipped past their fence. Each retelling of this episode paints a picture of his determination and the unrelenting demands of farm life.
+Following my father’s untimely passing, a deep bond formed between my grandfather and me. By now, I’ve sat through most of his tales at least 20 times. A personal favorite is a vivid memory of him, despite nursing a broken leg, valiantly chasing down wayward cows that had slipped past their fence. Each retelling of this episode paints a picture of his determination and the unrelenting demands of farm life.
 
 <figure class="w:100p flex flex:col align-items:center text:center mt:36 mb:18 sm:mb:64">
     <img
