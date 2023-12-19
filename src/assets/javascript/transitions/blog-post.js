@@ -24,7 +24,6 @@ function blogScrolls() {
     mm.add("(min-width: 1024px)", () => {
 
         const tocEnd = (document.querySelector("[data-blog-toc]").offsetHeight + 144) + "px";
-        console.log(tocEnd)
         // Pin Toc
         let pinToc = ScrollTrigger.create({
             trigger: "[data-blog-content]",
