@@ -14,7 +14,7 @@
     "imageAttribution": "Using MidJourney",
     "headline": "<span class='sm:space:nowrap'><span class='hidden sm:inline'>The</span> Nostalgia<br class='sm:hidden'/> of</span> <span class='sm:space:nowrap'>Rural Wisconsin</span>",
     "subhead": "Depicting thoughts and memories that <span class='space:nowrap'>I never</span> had photographs of with AI.",
-    "thumbHeadline": "<span class='space:nowrap'>The Nostalgia of</span> <span class='space:nowrap'>Rural Wisconsin</span>",
+    "thumbHeadline": "<span class='space:nowrap'>The Nostalgia of</span><br/> <span class='space:nowrap'>Rural Wisconsin</span>",
     "background": "#302721",
     "accent": "#d0725b",
     "type": "Thoughts",

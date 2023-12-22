@@ -5,24 +5,11 @@ import { SplitText } from "gsap/SplitText";
 import {copyToClipboard} from '../interactions/copy-to-clipboard.js';
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,SplitText);
 
-function blogScrolls() {
+export const blogScrolls =  function() {
 
-    if(document.querySelectorAll(`[data-anchor-scroll]`)) {
-        const anchors = document.querySelectorAll(`[data-anchor-scroll]`);
-        anchors.forEach(anchor => {
-            const link = anchor.href;
-            const sectionId = link.split("/").pop();
-            const scrollToSection = (event) => {
-                event.preventDefault();
-                gsap.to(window, {duration: 1, scrollTo: { y: sectionId, offsetY: 88 }, ease: "power3.inOut"});
-            }
-            anchor.addEventListener(`click`, scrollToSection, false);
-        })
-    }  
-
+    // Large Screen Only Animations
     let mm = gsap.matchMedia();
     mm.add("(min-width: 1024px)", () => {
-
         const tocEnd = (document.querySelector("[data-blog-toc]").offsetHeight + 144) + "px";
         // Pin Toc
         let pinToc = ScrollTrigger.create({
@@ -60,7 +47,9 @@ function blogScrolls() {
         .from(ctaHeadline.chars, {opacity: 0, y: 36, stagger:0.05, duration: 1}, 0)
         .from("[data-blog-cta-btn]", {y:24, opacity: 0, duration: 0.5}, 0.5)
 
+    // Desktop Only Animations
     mm.add("(min-width: 768px)", () => {
+
         // Pin subhead
         let pinSubhead = ScrollTrigger.create({
             trigger: "[data-pin-blog-subheader]",
@@ -68,6 +57,7 @@ function blogScrolls() {
             start: "top -1px",
             end: "bottom 56px",
         });
+
         // Change subhead color
         const changeColor = gsap.timeline({
             scrollTrigger: {
@@ -81,6 +71,7 @@ function blogScrolls() {
         changeColor
             .set("[data-blog-subheader-bg]", {backgroundColor: 'rgba(var(--sheet-6-i),1)'}, 0)
             .set("[data-blog-subhead-toggle]", {y: -30}, 0)
+
         // Swap link for headline
         const indicateScroll = gsap.timeline({
             scrollTrigger: {
@@ -95,7 +86,7 @@ function blogScrolls() {
     });
 }
 
-function anchorScroll() {
+function anchorMarquee() {
     const links = document.querySelectorAll("[data-anchor-scroll]");
     links.forEach(link => {
         const text = link.querySelector("[data-anchor-text]");
@@ -117,6 +108,23 @@ function anchorScroll() {
     });
 }
 
+function anchorScroll() {
+    if(document.querySelectorAll(`[data-anchor-scroll]`)) {
+        const anchors = document.querySelectorAll(`[data-anchor-scroll]`);
+        anchors.forEach(anchor => {
+            const link = anchor.href;
+            const sectionId = link.split("/").pop();
+            const scrollToSection = (event) => {
+                event.preventDefault();
+                gsap.to(window, {duration: 1, scrollTo: { y: sectionId, offsetY: 88 }, ease: "power3.inOut"});
+            }
+            anchor.addEventListener(`click`, scrollToSection, false);
+        })
+    } 
+}
+
+// export the above functions so that I can trigger them during page transitions
+
 export const onceBlogpost = (container) => {
     function enter() {
         const headline = new SplitText(document.querySelector("[data-blog-headline]"), {type:"words"});
@@ -133,8 +141,7 @@ export const onceBlogpost = (container) => {
                 .from("[data-blog-subheader-bg]", {y: 55, opacity:0, duration:1, ease: "power4.out"}, 0.5)
                 .call(() => { headline.revert(); subhead.revert(); })
         copyToClipboard();
-        blogScrolls();
-        setTimeout(function(){ anchorScroll(); }, 50);
+        setTimeout(function(){ anchorScroll(); anchorMarquee(); }, 50);
     }
     return enter();
 }
@@ -153,9 +160,11 @@ export const enterBlogpost = (container) => {
                 .from("[data-blog-type]", {y: 32, opacity:0, duration:1, ease: "power4.out"}, 0.5)
                 .from("[data-blog-subheader-bg]", {y: 55, opacity:0, duration:1, ease: "power4.out"}, 0.5)
                 .call(() => { headline.revert(); subhead.revert(); })
-        copyToClipboard();
-        blogScrolls();
-        setTimeout(function(){ anchorScroll(); }, 50);
+        setTimeout(function(){ anchorScroll(); anchorMarquee(); copyToClipboard(); }, 50);
     }
     return enter();
+}
+
+export const leaveBlogpost = (container) => {
+    return gsap.to(container, {autoAlpha: 0, duration: 0.5})
 }

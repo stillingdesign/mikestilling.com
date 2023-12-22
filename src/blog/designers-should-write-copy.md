@@ -14,7 +14,7 @@
     "imageAttribution": "Using MidJourney",
     "headline": "Designers <span class='space:nowrap'>should write</span>",
     "subhead": "Wouldn't it make sense to craft <span class='space:nowrap'>the words that we're designing?</span>",
-    "thumbHeadline": "Designers should <span class='sm:space:nowrap'>write <span class='space:nowrap'><del>code</del> copy.</span></span>",
+    "thumbHeadline": "Designers should<br/> <span class='space:nowrap'>write <span class='space:nowrap'><del>code</del> copy.</span></span>",
     "background": "#431818",
     "accent": "#f2c900",
     "barba": "blogpost",

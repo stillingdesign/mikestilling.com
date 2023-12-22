@@ -14,7 +14,7 @@
     "imageAttribution": "Using MidJourney",
     "headline": "B2B SaaS Marketing <span class='space:nowrap'>is Boring</span>",
     "subhead": "Cause nobody is deeply intrigued <span class='space:nowrap'>by solutions to enterprise problems</span>",
-    "thumbHeadline":"Why is B2B SaaS <span class='space:nowrap'>Marketing so boring?</span>",
+    "thumbHeadline":"Why is B2B SaaS<br/> <span class='space:nowrap'>Marketing so boring?</span>",
     "thumbSubheadline":"Is anyone deeply intrigued <span class='space:nowrap'>by bland,</span> high-level benefits <span class='space:nowrap'>for enterprises...</span>",
     "background": "#1b2723",
     "accent": "#dc834a",
