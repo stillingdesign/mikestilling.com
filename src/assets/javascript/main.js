@@ -1,90 +1,74 @@
 import barba from "@barba/core";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 // Page Transitions and Scripts
 import {tabs} from './interactions/tabs.js';
+import {blogCards} from './interactions/cards.js';
 import {enterDefault, leaveDefault} from './transitions/default.js';
 import {onceHome, enterHome, leaveHome} from './transitions/home.js';
 import {onceRewatch, enterRewatch, leaveRewatch} from './transitions/rewatch.js';
 import {onceFirehydrant, enterFirehydrant, leaveFirehydrant} from './transitions/firehydrant.js';
 import {onceAbstract, enterAbstract, leaveAbstract} from './transitions/abstract.js';
-import {onceBlogpost, enterBlogpost} from './transitions/blog-post.js';
+import {onceBlogpost, enterBlogpost, leaveBlogpost, blogScrolls} from './transitions/blog-post.js';
 
 barba.hooks.once(() => {
     document.querySelector("[data-fuoc]").style.display = "none";
-    window.addEventListener('load', () => { tabs(); });
+    window.addEventListener('load', () => { tabs(); if(document.querySelectorAll("[data-casestudy-link]")) { blogCards(); } });
 });
 
 barba.hooks.enter(() => {
     window.scrollTo(0, 0);
     tabs();
+    if(document.querySelectorAll("[data-casestudy-link]")) { blogCards(); }
 });
 
 barba.init({
     transitions: [
         {
             name: 'default',
-            once({next}) {
-                enterDefault(next.container)
-            },
+            once({next}) { enterDefault(next.container) },
             leave: ({current}) => leaveDefault(current.container),
-            enter({next}) {
-                enterDefault(next.container)
-            }
+            enter({next}) { enterDefault(next.container) }
         },
         {
             name: 'home',
             to: { namespace: ['home'] },
-            once({next}) {
-                onceHome(next.container)
-            },
+            once({next}) { onceHome(next.container) },
             leave: ({current}) => leaveHome(current.container),
-            enter({next}) {
-                enterHome(next.container)
-            }
+            enter({next}) { enterHome(next.container) }
         },
         {
             name: 'rewatch',
             to: { namespace: ['rewatch'] },
-            once({next}) {
-                onceRewatch(next.container)
-            },
+            once({next}) { onceRewatch(next.container) },
             leave: ({current}) => leaveRewatch(current.container),
-            enter({next}) {
-                enterRewatch(next.container)
-            }
+            enter({next}) { enterRewatch(next.container) }
         },
         {
             name: 'firehydrant',
             to: { namespace: ['firehydrant'] },
-            once({next}) {
-                onceFirehydrant(next.container)
-            },
+            once({next}) { onceFirehydrant(next.container) },
             leave: ({current}) => leaveFirehydrant(current.container),
-            enter({next}) {
-                enterFirehydrant(next.container)
-            }
+            enter({next}) { enterFirehydrant(next.container) }
         },
         {
             name: 'abstract',
             to: { namespace: ['abstract'] },
-            once({next}) {
-                onceAbstract(next.container)
-            },
+            once({next}) { onceAbstract(next.container) },
             leave: ({current}) => leaveAbstract(current.container),
-            enter({next}) {
-                enterAbstract(next.container)
-            }
+            enter({next}) { enterAbstract(next.container) }
         },
         {
             name: 'blogpost',
             to: { namespace: ['blogpost'] },
-            once({next}) {
-                onceBlogpost(next.container)
-            },
-            leave: ({current}) => leaveDefault(current.container),
-            enter({next}) {
-                enterBlogpost(next.container)
-            }
+            once({next}) { onceBlogpost(next.container) },
+            afterOnce() { blogScrolls(); },
+            leave: ({current}) => leaveBlogpost(current.container),
+            afterLeave() { ScrollTrigger.getAll().forEach(st => st.kill()); },
+            enter({next}) { enterBlogpost(next.container); },
+            after() { blogScrolls() }
         }
     ]
 })
