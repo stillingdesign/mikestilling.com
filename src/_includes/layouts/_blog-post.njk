@@ -189,7 +189,7 @@ changefreq: monthly
             Still wanting more? <span class="opacity:70">Check out</span> <span class="space:nowrap opacity:70">these other articles from Mike</span>
         </div>
         <ul class="container grid grid-cols:1 md:grid-cols:2 gap:28">
-            {% for post in collections.blog | removeCurrent(title) %}
+            {% for post in collections.blog | removeCurrent(title) | limit(2) %}
                 <li class="relative w:100p flex ratio:16-9 bg:sheet-4-i">
                         <a data-blog-thumbnail href="{{ post.url }}" class="relative z:1 w:100p h:100p flex flex:col align-items:center justify-content:center overflow:hidden outline:none">
                             <img

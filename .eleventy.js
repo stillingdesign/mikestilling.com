@@ -68,6 +68,7 @@ module.exports = (eleventyConfig) => {
 
     eleventyConfig.addFilter("dateShort", (dateObj) => { return DateTime.fromISO(dateObj).toLocaleString(DateTime.DATE_SHORT); });
     eleventyConfig.addFilter("dateFull", (dateObj) => { return DateTime.fromISO(dateObj).toLocaleString(DateTime.DATE_FULL); });
+    eleventyConfig.addFilter("limit", function(array, limit) { return array.slice(0, limit); });
 
     // Remove current post from results
 
