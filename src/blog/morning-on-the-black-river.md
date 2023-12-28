@@ -46,6 +46,16 @@
             "title": "Launch Kayak",
             "link": "#deploy-kayak",
             "tag": "p"
+        },
+        {
+            "title": "Fish On!",
+            "link": "#fish-on",
+            "tag": "p"
+        },
+        {
+            "title": "Great Debate",
+            "link": "#great-debate",
+            "tag": "p"
         }
     ]
 }
@@ -177,7 +187,7 @@ Hand-turning, my reel begins to retrieve the bait. Making its way back to the sa
     </figcaption>
 </figure>
 
-Amongst a picturesque Northwoods morning, chaos ensues. The braid buzzes back into the reel as it rotates faster than a stand mixer on high. The attached, flailing bass shatters through the glass-like surface. It’s big.
+<p id="fish-on">Amongst a picturesque Northwoods morning, chaos ensues. The braid buzzes back into the reel as it rotates faster than a stand mixer on high. The attached, flailing bass shatters through the glass-like surface. It’s big.</p>
 
 The base of the rod stays pointed towards the heavens, while its tip curves violently toward the water. My hand holding the cork grip trembles as the other reaches for a net that lays in the front of the ship. The beast’s tail, now within inches of the boat, slaps the water, sending it splashing in every direction.
 
@@ -199,6 +209,6 @@ Clear of the hook, I now place my free hand below the fish’s stomach to suppor
     </figcaption>
 </figure>
 
-As quickly as it came, I delicately lower it back into the water—thankful for its fortitude while serving my simple hobby. Now, my mind sorts through next steps.
+<p id="great-debate">As quickly as it came, I delicately lower it back into the water—thankful for its fortitude while serving my simple hobby. Now, my mind sorts through next steps.</p>
 
 Do I return to civilization, resuscitating the green bubble next to my virtual avatar? Or, can my livelihood spare another ten to ninety minutes while I repeat the process, sitting atop this kayak, enjoying the fresh air, and soaking in the sun, sounds, and smells provided by the Black River?
