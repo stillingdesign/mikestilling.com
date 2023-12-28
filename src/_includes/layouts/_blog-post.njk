@@ -189,50 +189,90 @@ changefreq: monthly
             Still wanting more? <span class="opacity:70">Check out</span> <span class="space:nowrap opacity:70">these other articles from Mike</span>
         </div>
         <ul class="container grid grid-cols:1 md:grid-cols:2 gap:28">
-            {% for post in collections.blog | removeCurrent(title) | limit(2) %}
+            {% set previousPost = collections.blog | getPreviousCollectionItem %}
+            {% set nextPost = collections.blog | getNextCollectionItem %}
+            {% macro postCard(link, hero, heroAlt, published, bg, headline) %}
                 <li class="relative w:100p flex ratio:16-9 bg:sheet-4-i">
-                        <a data-blog-thumbnail href="{{ post.url }}" class="relative z:1 w:100p h:100p flex flex:col align-items:center justify-content:center overflow:hidden outline:none">
-                            <img
-                                src="{{ post.data.heroImage }}"
-                                alt="{{ post.data.ogImageAlt }}"
-                                width="1920" height="1080"
-                                class="absolute w:100p h:auto"
-                                loading="lazy"
-                                decoding="async"
-                                data-blog-thumbnail-img
-                            />
-                            <div class="absolute top:0 bottom:0 w:100p h:100p opacity:90" style="background-color: {{ post.data.background }}; mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 80%); -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 80%);"></div>
-                            <div class="relative flex flex:col justify-content:between w:100p h:100p p:28">
-                                <div class="flex align-items:center justify-content:between">
-                                    <div class="px:10 pt:6 pb:4 font:xs uppercase tracking:loosest bg:sheet-6-i bg-opacity:40 radius:xs backdrop backdrop-blur:sm mt:2">
-                                        <p class="mb:1">
-                                            {{ post.data.date | dateShort }}
-                                        </p>
-                                    </div>
-                                    <div data-blog-thumbnail-button class="relative z:1 radius:full bg:sheet-1 color:sheet-6-i overflow:hidden sm:w:32" style="height:32px;">
-                                        <div data-blog-thumbnail-button-inner class="absolute right:0 top:0 flex align-items:center justify-content:end flex-shrink:0">
-                                            <div class="flex-shrink:0 pl:14 font:sm medium mb:1">
-                                                Read article
-                                            </div>
-                                            <div class="flex-shrink:0 flex align-items:center justify-content:center w:32 h:32">
-                                                {{ icons.arrowRight('w:16 ml:1 mb:1') }}
-                                            </div>
+                    <a data-blog-thumbnail href="{{ link }}" class="relative z:1 w:100p h:100p flex flex:col align-items:center justify-content:center overflow:hidden outline:none">
+                        <img
+                            src="{{ hero }}"
+                            alt="{{ heroAlt }}"
+                            width="1920" height="1080"
+                            class="absolute w:100p h:auto"
+                            loading="lazy"
+                            decoding="async"
+                            data-blog-thumbnail-img
+                        />
+                        <div class="absolute top:0 bottom:0 w:100p h:100p opacity:90" style="background-color: {{ bg }}; mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 80%); -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 80%);"></div>
+                        <div class="relative flex flex:col justify-content:between w:100p h:100p p:28">
+                            <div class="flex align-items:center justify-content:between">
+                                <div class="px:10 pt:6 pb:4 font:xs uppercase tracking:loosest bg:sheet-6-i bg-opacity:40 radius:xs backdrop backdrop-blur:sm mt:2">
+                                    <p class="mb:1">
+                                        {{ published | dateShort }}
+                                    </p>
+                                </div>
+                                <div data-blog-thumbnail-button class="relative z:1 radius:full bg:sheet-1 color:sheet-6-i overflow:hidden sm:w:32" style="height:32px;">
+                                    <div data-blog-thumbnail-button-inner class="absolute right:0 top:0 flex align-items:center justify-content:end flex-shrink:0">
+                                        <div class="flex-shrink:0 pl:14 font:sm medium mb:1">
+                                            Read article
+                                        </div>
+                                        <div class="flex-shrink:0 flex align-items:center justify-content:center w:32 h:32">
+                                            {{ icons.arrowRight('w:16 ml:1 mb:1') }}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w:100p">
-                                    <h3 class="font:2xl md:font:2xl lg:font:4xl tracking:n6 leading:120 mb:4">
-                                        {% if post.data.thumbHeadline %}
-                                            {{ post.data.thumbHeadline | safe }}
-                                        {% else %}
-                                            {{ post.data.headline | safe }}
-                                        {% endif %}
-                                    </h3>
-                                </div>
                             </div>
-                        </a>
-                    </li>
-            {% endfor %}
+                            <div class="w:100p">
+                                <h3 class="font:2xl md:font:2xl lg:font:4xl tracking:n6 leading:120 mb:4">
+                                    {{ headline | safe }}
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            {% endmacro %}
+            {% if nextPost %}
+                {{ postCard(
+                    link = nextPost.url,
+                    hero = nextPost.data.heroImage,
+                    heroAlt = nextPost.data.ogImageAlt,
+                    published = nextPost.data.date,
+                    bg = nextPost.data.background,
+                    headline = nextPost.data.thumbHeadline
+                )}}
+            {% else %}
+                {% for post in collections.blog | limit(1) %}
+                    {{ postCard(
+                        link = post.url,
+                        hero = post.data.heroImage,
+                        heroAlt = post.data.ogImageAlt,
+                        published = post.data.date,
+                        bg = post.data.background,
+                        headline = post.data.thumbHeadline
+                    )}}
+                {% endfor %}
+            {% endif %}
+            {% if previousPost %}
+                {{ postCard(
+                    link = previousPost.url,
+                    hero = previousPost.data.heroImage,
+                    heroAlt = previousPost.data.ogImageAlt,
+                    published = previousPost.data.date,
+                    bg = previousPost.data.background,
+                    headline = previousPost.data.thumbHeadline
+                )}}
+            {% else %}
+                {% for post in collections.blog | reverse | limit(1) %}
+                    {{ postCard(
+                        link = post.url,
+                        hero = post.data.heroImage,
+                        heroAlt = post.data.ogImageAlt,
+                        published = post.data.date,
+                        bg = post.data.background,
+                        headline = post.data.thumbHeadline
+                    )}}
+                {% endfor %}
+            {% endif %}
         </ul>
     </section>
 
