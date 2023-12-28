@@ -348,15 +348,15 @@ changefreq: daily
                 </div>
             </h2>
             <div class="relative z:1 w:100p flex justify-content:center align-items:center overflow:hidden">
-                <ul class="relative w:100p flex flex:col sm:grid grid-cols:2 md:grid-cols:3 gap:28">
+                <ul class="relative w:100p flex flex:col sm:grid grid-cols:2 md:grid-cols:2 gap:28">
                     {% for post in collections.blog | reverse %}
-                        <li class="relative w:100p flex ratio:3-4 bg:sheet-4-i">
+                        <li class="relative w:100p flex ratio:1-1 sm:ratio:16-9 bg:sheet-4-i">
                             <a data-blog-thumbnail href="{{ post.url }}" class="relative z:1 w:100p h:100p flex flex:col align-items:center justify-content:center overflow:hidden outline:none">
                                 <img
-                                    src="{{ post.data.thumbImage }}"
+                                    src="{{ post.data.heroImage }}"
                                     alt="{{ post.data.ogImageAlt }}"
-                                    width="366" height="488"
-                                    class="absolute w:100p h:auto"
+                                    width="720" height="405"
+                                    class="absolute w:auto h:100p max-w:none"
                                     loading="lazy"
                                     decoding="async"
                                     data-blog-thumbnail-img
@@ -393,36 +393,6 @@ changefreq: daily
                             </a>
                         </li>
                     {% endfor %}
-                    <li class="relative w:100p hidden sm:flex md:hidden align-items:center justify-content:center ratio:3-4 bg:sheet-4-i z:1 overflow:hidden">
-                        <div class="absolute gap:12 bg:sheet-1-i sm:font:xl color:ink-1-i px:12 transform rotate:45 flex-shrink:0 flex border-y:1 border:white border-opacity:10">
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                        </div>
-                        <div class="absolute gap:12 bg:sheet-3-i sm:font:xl color:ink-1-i px:12 transform rotate:n45 flex-shrink:0 flex border-y:1 border:white border-opacity:6">
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                            <div class="flex-shrink:0 space:nowrap"> Coming soon</div>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
