@@ -234,7 +234,7 @@ changefreq: monthly
             {% if nextPost %}
                 {{ postCard(
                     link = nextPost.url,
-                    hero = nextPost.data.heroImage,
+                    hero = nextPost.data.thumbImageHorz,
                     heroAlt = nextPost.data.ogImageAlt,
                     published = nextPost.data.date,
                     bg = nextPost.data.background,
@@ -244,7 +244,7 @@ changefreq: monthly
                 {% for post in collections.blog | limit(1) %}
                     {{ postCard(
                         link = post.url,
-                        hero = post.data.heroImage,
+                        hero = post.data.thumbImageHorz,
                         heroAlt = post.data.ogImageAlt,
                         published = post.data.date,
                         bg = post.data.background,
@@ -255,7 +255,7 @@ changefreq: monthly
             {% if previousPost %}
                 {{ postCard(
                     link = previousPost.url,
-                    hero = previousPost.data.heroImage,
+                    hero = previousPost.data.thumbImageHorz,
                     heroAlt = previousPost.data.ogImageAlt,
                     published = previousPost.data.date,
                     bg = previousPost.data.background,
@@ -265,7 +265,7 @@ changefreq: monthly
                 {% for post in collections.blog | reverse | limit(1) %}
                     {{ postCard(
                         link = post.url,
-                        hero = post.data.heroImage,
+                        hero = post.data.thumbImageHorz,
                         heroAlt = post.data.ogImageAlt,
                         published = post.data.date,
                         bg = post.data.background,
