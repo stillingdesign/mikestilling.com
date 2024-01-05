@@ -54,15 +54,15 @@ For the final touches, Mike looked toward the product for direction. Thankfully,
 
 <figure class="relative w:100p mt:32 sm:mt:48 mb:64 sm:mb:56 text:center">
     <img
-        src="/assets/images/graphics/rewatch-home-hero.webp"
-        alt="a screenshot of the Rewatch.com homepage"
-        width="1400" height="896"
+        src="/assets/images/graphics/rewatch-recorder-bento.webp"
+        alt="a screenshot of a bento grid design on Rewatch's screen recorder page"
+        width="1152" height="920"
         class="relative w:100p h:auto max-w:none z:1 radius:lg overflow:hidden border:1 border:white border-opacity:10"
         loading="lazy"
         decoding="async"
     />
     <figcaption class="mt:12 sm:mt:24 mb:n32">
-        Rewatch's homepage hero section
+        A bento grid on Rewatch's screen recorder page
     </figcaption>
 </figure>
 
@@ -181,15 +181,15 @@ While at first, going between the two was a matter of preference and opinion, <m
 
 <figure class="relative w:100p mt:32 sm:mt:48 mb:64 sm:mb:72 text:center">
     <img
-        src="/assets/images/graphics/rewatch-spike-intro.webp"
-        alt="a screenshot of the Rewatch.com homepage"
-        width="1080" height="720"
+        src="/assets/images/graphics/rewatch-recorder-ai.webp"
+        alt="a screenshot of a section layout for Rewatch's AI features"
+        width="1152" height="901"
         class="relative w:100p h:auto max-w:none z:1 radius:lg overflow:hidden border:1 border:white border-opacity:10"
         loading="lazy"
         decoding="async"
     />
     <figcaption class="mt:12 sm:mt:24 mb:n32">
-        The overview section of a spike Mike created to visualize <span class="space:nowrap">what a feature-based approach could look like</span>
+        The AI section of the Screen Recorder page.
     </figcaption>
 </figure>
 
