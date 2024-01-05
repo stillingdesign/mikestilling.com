@@ -95,7 +95,7 @@ For the final touches, Mike looked toward the product for direction. Thankfully,
     </figure>
 </div>
 
-### <span class="font:serif italic">under</span> the hood
+### <span class="font:serif italic">Under</span> the hood
 
 <mark>Mike also designed, built, and managed Rewatch's marketing website.</mark> He chose tools that made building quick and flexible, while straightforward enough for the product folks to dive into, <span class="space:nowrap">if help</span> was <span class="space:nowrap">ever needed.</span>
 
