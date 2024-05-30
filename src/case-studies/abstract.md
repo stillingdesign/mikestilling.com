@@ -41,7 +41,7 @@ Abstract's design methodology and practice was top notch. Upon joining, Mike had
 
 Abstract was Mike's first experience working in-house at a SaaS company. Prior to that, he had worked with tech companies from the agency side. To some extent, ignorance <span class="space:nowrap">was bliss.</span>
 
-Mike hadn't heard of [Adam Ho](https://www.adamho.com/), one of folks who designed the original Abstract brand. He never heard of [FinSweet](https://finsweet.com/), the world class Webflow agency that originally built the Abstract site. Nor had he understood how gnarly the team's <span class="space:nowrap">credentials were.</span>
+Coming from agencies, Mike hadn't heard of the rock star team that originally built the Abstract brand—folks like [Adam Ho](https://www.adamho.com/), [Daina Lightfoot](https://dainalightfoot.com/), [Vince Joy](https://www.vincejoy.com/), [Devin Jacoviello](https://www.jacoviello.com/), and [Hugo Baeta](https://hugobaeta.com/).
 
 If he did, maybe it would have been a little more intimidating. Instead, he was just excited about the seemingly insane company benefits, bump in pay, and to <span class="space:nowrap">dive on in.</span>
 
